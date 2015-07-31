@@ -10,10 +10,12 @@
 
 # 커리큘럼
 <b>PART I</b>
-* 2015년 7월 17일~ 2015년 9  
+* 2015년 5월 22일~ 2015년 9  
 
 | 회차  | 일시   | 내용                                  | 발표자  |              발표자료                    |
 | ----- |:------:| :-------------------------------------|:-------:|:----------------------------------------: |
-| 1 |7/17|(소비자)1. History of Consumer Psychology |이종서|  [발표자료](https://drive.google.com/file/d/0B5JBHuPaVyd_bWRkZ3ZpYmZwNzA/view) |
+| 1 |5/22|(소비자)1. History of Consumer Psychology |이종서|  [발표자료](https://drive.google.com/file/d/0B5JBHuPaVyd_bWRkZ3ZpYmZwNzA/view) |
 |   |    |(소비자)2. 2. The Role of Knowledge Accessibility in Cognition and Behavior|김무성|[발표자료](http://nbviewer.ipython.org/github/psygement/conpsy/blob/master/part1/consumer/ch02/Ch02_The_Role_of_Knowledge_Accessibility_in_Cognition_and_Behavior.ipynb) |
 |   |    |(GA) 1. Digital Analytics Fundamentals    |문현호| [발표자료](https://drive.google.com/file/d/0B5PLVJct9613TUxxZjh1bDN1MGM/view) | 
+|   |    |보강 A) github, github에 웹페이지 만들기, GA 코드 심기    |김무성| 참고자료 |
+
