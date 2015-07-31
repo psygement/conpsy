@@ -16,4 +16,4 @@
 | ----- |:------:| :-------------------------------------|:-------:|:----------------------------------------: |
 | 1 |7/17|(소비자)1. History of Consumer Psychology |이종서|  [발표자료](https://drive.google.com/file/d/0B5JBHuPaVyd_bWRkZ3ZpYmZwNzA/view) |
 |   |    |(소비자)2. 2. The Role of Knowledge Accessibility in Cognition and Behavior|김무성|[발표자료](http://nbviewer.ipython.org/github/psygement/conpsy/blob/master/part1/consumer/ch02/Ch02_The_Role_of_Knowledge_Accessibility_in_Cognition_and_Behavior.ipynb) |
-|   |    |(GA) 1. Digital Analytics Fundamentals    |문현호| [발표자료](https://drive.google.com/drive/folders/0Bw594TdiBdAUfkpNdElsVERWWWdYQlctbEVhTExmR2p0c2dyeG1xY2lZMXBBZ21ELUN4ZkU) | 
+|   |    |(GA) 1. Digital Analytics Fundamentals    |문현호| [발표자료](https://drive.google.com/file/d/0B5PLVJct9613TUxxZjh1bDN1MGM/view) | 
