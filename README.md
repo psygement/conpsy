@@ -19,3 +19,8 @@
 |   |    |(GA) 1. Digital Analytics Fundamentals    |문현호| [발표자료](https://drive.google.com/file/d/0B5PLVJct9613TUxxZjh1bDN1MGM/view) | 
 |   |    |보강 A) github, github에 웹페이지 만들기, GA 코드 심기    |김무성| 참고자료 |
 | 2 |7/24|(소비자) 3.Psychological Distance and Consumer Behavior: A Construal Level Theory Perspective |이수현| [발표자료](https://drive.google.com/file/d/0B3UXG8FFk3jINjRxUVpEcUZzRUU/view) |
+|   |    |(R) 3. Describing Data    |김성근| |
+|   |    |(GA) 3. Google Analytics Platform Principles    |김성근|[발표자료](https://drive.google.com/file/d/0B_Ekt7icI0htTzZJSkljMEVaYTQ/view) |
+| 3 |7/31|(소비자) 1. Digital Analytics Fundamentals    |문현호|
+
+
