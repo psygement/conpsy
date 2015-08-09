@@ -18,4 +18,4 @@
 |   |    |(소비자)2. 2. The Role of Knowledge Accessibility in Cognition and Behavior|김무성|[발표자료](http://nbviewer.ipython.org/github/psygement/conpsy/blob/master/part1/consumer/ch02/Ch02_The_Role_of_Knowledge_Accessibility_in_Cognition_and_Behavior.ipynb) |
 |   |    |(GA) 1. Digital Analytics Fundamentals    |문현호| [발표자료](https://drive.google.com/file/d/0B5PLVJct9613TUxxZjh1bDN1MGM/view) | 
 |   |    |보강 A) github, github에 웹페이지 만들기, GA 코드 심기    |김무성| 참고자료 |
-
+| 2 |7/24|(소비자) 3.Psychological Distance and Consumer Behavior: A Construal Level Theory Perspective |이수현| [발표자료](https://drive.google.com/file/d/0B3UXG8FFk3jINjRxUVpEcUZzRUU/view) |
