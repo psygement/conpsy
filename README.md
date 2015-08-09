@@ -1,4 +1,4 @@
-# conpsy
+﻿# conpsy
 소비자심리On
 
 # 스터디 정보 
@@ -26,7 +26,7 @@
 |   |    |(GA) 4. Ecommerce Analytics: From Data to Decisions|김성근| |
 | 4 |8/7|(소비자)5. Brands and Successful Brand Extensions: A Social Psychology|이수현|[발표자료](https://drive.google.com/file/d/0B3UXG8FFk3jIanZvYkxhUmJzZDQ/view) |
 |   |    |(R) 5. Comparing Groups: Tables and Visualizations|문현호| |
-|   |    |(GA) 5. Mobile App Analytics Fundamentals|김성근| |
+|   |    |(GA) 5. Mobile App Analytics Fundamentals|김성근|[발표자료](https://drive.google.com/file/d/0B_Ekt7icI0htUnFIbEtqSGl3ZFk/view)|
 
 
 
