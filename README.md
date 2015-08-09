@@ -21,7 +21,7 @@
 | 2 |7/24|(소비자) 3.Psychological Distance and Consumer Behavior: A Construal Level Theory Perspective |이수현| [발표자료](https://drive.google.com/file/d/0B3UXG8FFk3jINjRxUVpEcUZzRUU/view) |
 |   |    |(R) 3. Describing Data|김성근| |
 |   |    |(GA) 3. Google Analytics Platform Principles |김성근|[발표자료](https://drive.google.com/file/d/0B_Ekt7icI0htTzZJSkljMEVaYTQ/view) |
-| 3 |7/31|(소비자) 4. The Rational Unconscious: Conscious versus Unconscious Thought in Complex Consumer |김무성|[발표자료] |
+| 3 |7/31|(소비자) 4. The Rational Unconscious: Conscious versus Unconscious Thought in Complex Consumer |김무성|[발표자료](http://nbviewer.ipython.org/github/psygement/conpsy/blob/master/part1/consumer/ch04/04_The_Rational_Unconscious.ipynb) |
 |   |    |(R) 4. Relationships Between Continuous Variables|김성근| |
 |   |    |(GA) 4. Ecommerce Analytics: From Data to Decisions|김성근| |
 | 4 |8/7|(소비자)5. Brands and Successful Brand Extensions: A Social Psychology|이수현|[발표자료](https://drive.google.com/file/d/0B3UXG8FFk3jIanZvYkxhUmJzZDQ/view) |
