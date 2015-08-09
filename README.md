@@ -21,7 +21,9 @@
 | 2 |7/24|(소비자) 3.Psychological Distance and Consumer Behavior: A Construal Level Theory Perspective |이수현| [발표자료](https://drive.google.com/file/d/0B3UXG8FFk3jINjRxUVpEcUZzRUU/view) |
 |   |    |(R) 3. Describing Data|김성근| |
 |   |    |(GA) 3. Google Analytics Platform Principles |김성근|[발표자료](https://drive.google.com/file/d/0B_Ekt7icI0htTzZJSkljMEVaYTQ/view) |
-
+|8/7 |(소비자)5. Brands and Successful Brand Extensions: A Social Psychology|이수현|[발표자료](https://drive.google.com/file/d/0B3UXG8FFk3jIanZvYkxhUmJzZDQ/view) |
+|   |    |(R) 5. Comparing Groups: Tables and Visualizations|문현호| |
+|   |    |(GA) 5. Mobile App Analytics Fundamentals|김성근| |
 
 
 
