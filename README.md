@@ -11,6 +11,7 @@
     - R : [R for Marketing Research and Analytics](http://www.amazon.com/Marketing-Research-Analytics-Use/dp/3319144359)
   - PART II   
     - 소비자 & R 교재는 PART II와 동일
+    - 린분석 : [린 분석 - 성공을 예측하는 31가지 사례와 13가지 패턴](http://www.aladin.co.kr/shop/wproduct.aspx?ItemId=34465476)
     - 파이썬(Django+Shop)
       - (파이숍) [cartridge/mezzanine](http://blog.endpoint.com/2014/12/ecommerce-in-django-world.html)
       - (리눅스) [Linux Command Line Basics](https://www.udacity.com/course/linux-command-line-basics--ud595)
@@ -21,8 +22,9 @@
       - (장고) [Django로 배우는 쉽고 빠른 웹 개발](http://www.aladin.co.kr/shop/wproduct.aspx?ItemId=55249081) 
 
 # 커리큘럼
+
 <b>PART I</b>
-* 2015년 5월 22일~ 2015년 9  
+* 2015년 5월 22일~ 2015년 8월 28일
 
 | 회차  | 일시   | 내용                                  | 발표자  |              발표자료                    |
 | ----- |:------:| :-------------------------------------|:-------:|:----------------------------------------: |
@@ -53,6 +55,18 @@
 | 9 |8/28|(소비자) 7. Conditioning as a Source of Liking: There Is Nothing Simple about It |김윤강| |
 |   |    |(R) 6. Comparing Groups: Statistical Tests | | |
 |   |    |(GA) 5. R과 GA 연동 | | |
+
+---------------
+
+<b>PART II</b>
+* 2015년 9월 4일~ 2015년 12월 18일
+
+| 회차   | 일시   | 내용                                  | 발표자  |              발표자료                    |
+| -----  |:------:| :-------------------------------------|:-------:|:----------------------------------------: |
+| 1 |9/4 |(소비자) 8. The Lexicon and Grammar of Affect as Information in Consumer Decision Making: The GAIM || |
+|   |    |(R) 7. Identifying Drivers of Outcomes: Linear Models (1)| | |
+|   |    |(린분석) 1. 우리는 모두 거짓말쟁이 & 2. 다양한 지표    || |
+|   |    |(파이숍) Cartridge/Mezzanine 소개 및 설치 & 데모    || |
 
 
 
