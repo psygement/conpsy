@@ -33,9 +33,16 @@
 | 6 |7/31|(소비자) 4. The Rational Unconscious: Conscious versus Unconscious Thought in Complex Consumer |김무성|[발표자료](http://nbviewer.ipython.org/github/psygement/conpsy/blob/master/part1/consumer/ch04/04_The_Rational_Unconscious.ipynb) |
 |   |    |(R) 4. Relationships Between Continuous Variables|김성근|[발표자료](https://github.com/psygement/conpsy/blob/master/part1/R-marketing/ch04/ch4.md) |
 |   |    |(GA) 4. Ecommerce Analytics: From Data to Decisions|김성근|[발표자료] |
-| 7 |8/7|(소비자)5. Brands and Successful Brand Extensions: A Social Psychology|이수현|[발표자료](https://drive.google.com/file/d/0B3UXG8FFk3jIanZvYkxhUmJzZDQ/view) |
-|   |    |(R) 5. Comparing Groups: Tables and Visualizations|문현호| |
+| 7 |8/7|(소비자) 5. Brands and Successful Brand Extensions: A Social Psychology|이수현|[발표자료](https://drive.google.com/file/d/0B3UXG8FFk3jIanZvYkxhUmJzZDQ/view) |
 |   |    |(GA) 5. Mobile App Analytics Fundamentals|김성근|[발표자료](https://drive.google.com/file/d/0B_Ekt7icI0htUnFIbEtqSGl3ZFk/view)|
+| 8 |8/21|(소비자) 6. Compensatory Reasoning in Choice |김성근| |
+|   |    |(R) 5. Comparing Groups: Tables and Visualizations |김성근| |
+|   |    |(GA) 7. Google Tag Manager Fundamental|김무성| |
+| 9 |8/28|(소비자) 7. Conditioning as a Source of Liking: There Is Nothing Simple about It |김윤강| |
+|   |    |(R) 6. Comparing Groups: Statistical Tests | | |
+|   |    |(GA) 5. R과 GA 연동 | | |
+
+
 
 
 
