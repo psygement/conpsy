@@ -67,7 +67,50 @@
 |   |    |(R) 7. Identifying Drivers of Outcomes: Linear Models (1)| | |
 |   |    |(린분석) 1. 우리는 모두 거짓말쟁이 & 2. 다양한 지표    || |
 |   |    |(파이숍) Cartridge/Mezzanine 소개 및 설치 & 데모    || |
-
+| 1 |9/4 |(소비자) 8. The Lexicon and Grammar of Affect as Information in Consumer Decision Making: The GAIM || |
+|   |    |(R) 7. Identifying Drivers of Outcomes: Linear Models (1)| | |
+|   |    |(린분석) 1. 우리는 모두 거짓말쟁이 & 2. 다양한 지표    || |
+|   |    |(파이숍) Cartridge/Mezzanine 소개 및 설치 & 데모    || |
+| 1 |9/4 |(소비자) 8. The Lexicon and Grammar of Affect as Information in Consumer Decision Making: The GAIM || |
+|   |    |(R) 7. Identifying Drivers of Outcomes: Linear Models (1)| | |
+|   |    |(린분석) 1. 우리는 모두 거짓말쟁이 & 2. 다양한 지표    || |
+|   |    |(파이숍) Cartridge/Mezzanine 소개 및 설치 & 데모    || |
+| 1 |9/4 |(소비자) 8. The Lexicon and Grammar of Affect as Information in Consumer Decision Making: The GAIM || |
+|   |    |(R) 7. Identifying Drivers of Outcomes: Linear Models (1)| | |
+|   |    |(린분석) 1. 우리는 모두 거짓말쟁이 & 2. 다양한 지표    || |
+|   |    |(파이숍) Cartridge/Mezzanine 소개 및 설치 & 데모    || |
+| 1 |9/4 |(소비자) 8. The Lexicon and Grammar of Affect as Information in Consumer Decision Making: The GAIM || |
+|   |    |(R) 7. Identifying Drivers of Outcomes: Linear Models (1)| | |
+|   |    |(린분석) 1. 우리는 모두 거짓말쟁이 & 2. 다양한 지표    || |
+|   |    |(파이숍) Cartridge/Mezzanine 소개 및 설치 & 데모    || |
+| 1 |9/4 |(소비자) 8. The Lexicon and Grammar of Affect as Information in Consumer Decision Making: The GAIM || |
+|   |    |(R) 7. Identifying Drivers of Outcomes: Linear Models (1)| | |
+|   |    |(린분석) 1. 우리는 모두 거짓말쟁이 & 2. 다양한 지표    || |
+|   |    |(파이숍) Cartridge/Mezzanine 소개 및 설치 & 데모    || |
+| 1 |9/4 |(소비자) 8. The Lexicon and Grammar of Affect as Information in Consumer Decision Making: The GAIM || |
+|   |    |(R) 7. Identifying Drivers of Outcomes: Linear Models (1)| | |
+|   |    |(린분석) 1. 우리는 모두 거짓말쟁이 & 2. 다양한 지표    || |
+|   |    |(파이숍) Cartridge/Mezzanine 소개 및 설치 & 데모    || |
+| 1 |9/4 |(소비자) 8. The Lexicon and Grammar of Affect as Information in Consumer Decision Making: The GAIM || |
+|   |    |(R) 7. Identifying Drivers of Outcomes: Linear Models (1)| | |
+|   |    |(린분석) 1. 우리는 모두 거짓말쟁이 & 2. 다양한 지표    || |
+|   |    |(파이숍) Cartridge/Mezzanine 소개 및 설치 & 데모    || |
+| 1 |9/4 |(소비자) 8. The Lexicon and Grammar of Affect as Information in Consumer Decision Making: The GAIM || |
+|   |    |(R) 7. Identifying Drivers of Outcomes: Linear Models (1)| | |
+|   |    |(린분석) 1. 우리는 모두 거짓말쟁이 & 2. 다양한 지표    || |
+|   |    |(파이숍) Cartridge/Mezzanine 소개 및 설치 & 데모    || |
+| 1 |9/4 |(소비자) 8. The Lexicon and Grammar of Affect as Information in Consumer Decision Making: The GAIM || |
+|   |    |(R) 7. Identifying Drivers of Outcomes: Linear Models (1)| | |
+|   |    |(린분석) 1. 우리는 모두 거짓말쟁이 & 2. 다양한 지표    || |
+|   |    |(파이숍) Cartridge/Mezzanine 소개 및 설치 & 데모    || |
+| 1 |9/4 |(소비자) 8. The Lexicon and Grammar of Affect as Information in Consumer Decision Making: The GAIM || |
+|   |    |(R) 7. Identifying Drivers of Outcomes: Linear Models (1)| | |
+|   |    |(린분석) 1. 우리는 모두 거짓말쟁이 & 2. 다양한 지표    || |
+|   |    |(파이숍) Cartridge/Mezzanine 소개 및 설치 & 데모    || |
+| 1 |9/4 |(소비자) 8. The Lexicon and Grammar of Affect as Information in Consumer Decision Making: The GAIM || |
+|   |    |(R) 7. Identifying Drivers of Outcomes: Linear Models (1)| | |
+|   |    |(린분석) 1. 우리는 모두 거짓말쟁이 & 2. 다양한 지표    || |
+|   |    |(파이숍) Cartridge/Mezzanine 소개 및 설치 & 데모    || |
 
 
 
