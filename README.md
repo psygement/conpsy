@@ -67,50 +67,52 @@
 |   |    |(R) 7. Identifying Drivers of Outcomes: Linear Models (1)| | |
 |   |    |(린분석) 1. 우리는 모두 거짓말쟁이 & 2. 다양한 지표    || |
 |   |    |(파이숍) Cartridge/Mezzanine 소개 및 설치 & 데모    || |
-| 1 |9/4 |(소비자) 8. The Lexicon and Grammar of Affect as Information in Consumer Decision Making: The GAIM || |
-|   |    |(R) 7. Identifying Drivers of Outcomes: Linear Models (1)| | |
-|   |    |(린분석) 1. 우리는 모두 거짓말쟁이 & 2. 다양한 지표    || |
-|   |    |(파이숍) Cartridge/Mezzanine 소개 및 설치 & 데모    || |
-| 1 |9/4 |(소비자) 8. The Lexicon and Grammar of Affect as Information in Consumer Decision Making: The GAIM || |
-|   |    |(R) 7. Identifying Drivers of Outcomes: Linear Models (1)| | |
-|   |    |(린분석) 1. 우리는 모두 거짓말쟁이 & 2. 다양한 지표    || |
-|   |    |(파이숍) Cartridge/Mezzanine 소개 및 설치 & 데모    || |
-| 1 |9/4 |(소비자) 8. The Lexicon and Grammar of Affect as Information in Consumer Decision Making: The GAIM || |
-|   |    |(R) 7. Identifying Drivers of Outcomes: Linear Models (1)| | |
-|   |    |(린분석) 1. 우리는 모두 거짓말쟁이 & 2. 다양한 지표    || |
-|   |    |(파이숍) Cartridge/Mezzanine 소개 및 설치 & 데모    || |
-| 1 |9/4 |(소비자) 8. The Lexicon and Grammar of Affect as Information in Consumer Decision Making: The GAIM || |
-|   |    |(R) 7. Identifying Drivers of Outcomes: Linear Models (1)| | |
-|   |    |(린분석) 1. 우리는 모두 거짓말쟁이 & 2. 다양한 지표    || |
-|   |    |(파이숍) Cartridge/Mezzanine 소개 및 설치 & 데모    || |
-| 1 |9/4 |(소비자) 8. The Lexicon and Grammar of Affect as Information in Consumer Decision Making: The GAIM || |
-|   |    |(R) 7. Identifying Drivers of Outcomes: Linear Models (1)| | |
-|   |    |(린분석) 1. 우리는 모두 거짓말쟁이 & 2. 다양한 지표    || |
-|   |    |(파이숍) Cartridge/Mezzanine 소개 및 설치 & 데모    || |
-| 1 |9/4 |(소비자) 8. The Lexicon and Grammar of Affect as Information in Consumer Decision Making: The GAIM || |
-|   |    |(R) 7. Identifying Drivers of Outcomes: Linear Models (1)| | |
-|   |    |(린분석) 1. 우리는 모두 거짓말쟁이 & 2. 다양한 지표    || |
-|   |    |(파이숍) Cartridge/Mezzanine 소개 및 설치 & 데모    || |
-| 1 |9/4 |(소비자) 8. The Lexicon and Grammar of Affect as Information in Consumer Decision Making: The GAIM || |
-|   |    |(R) 7. Identifying Drivers of Outcomes: Linear Models (1)| | |
-|   |    |(린분석) 1. 우리는 모두 거짓말쟁이 & 2. 다양한 지표    || |
-|   |    |(파이숍) Cartridge/Mezzanine 소개 및 설치 & 데모    || |
-| 1 |9/4 |(소비자) 8. The Lexicon and Grammar of Affect as Information in Consumer Decision Making: The GAIM || |
-|   |    |(R) 7. Identifying Drivers of Outcomes: Linear Models (1)| | |
-|   |    |(린분석) 1. 우리는 모두 거짓말쟁이 & 2. 다양한 지표    || |
-|   |    |(파이숍) Cartridge/Mezzanine 소개 및 설치 & 데모    || |
-| 1 |9/4 |(소비자) 8. The Lexicon and Grammar of Affect as Information in Consumer Decision Making: The GAIM || |
-|   |    |(R) 7. Identifying Drivers of Outcomes: Linear Models (1)| | |
-|   |    |(린분석) 1. 우리는 모두 거짓말쟁이 & 2. 다양한 지표    || |
-|   |    |(파이숍) Cartridge/Mezzanine 소개 및 설치 & 데모    || |
-| 1 |9/4 |(소비자) 8. The Lexicon and Grammar of Affect as Information in Consumer Decision Making: The GAIM || |
-|   |    |(R) 7. Identifying Drivers of Outcomes: Linear Models (1)| | |
-|   |    |(린분석) 1. 우리는 모두 거짓말쟁이 & 2. 다양한 지표    || |
-|   |    |(파이숍) Cartridge/Mezzanine 소개 및 설치 & 데모    || |
-| 1 |9/4 |(소비자) 8. The Lexicon and Grammar of Affect as Information in Consumer Decision Making: The GAIM || |
-|   |    |(R) 7. Identifying Drivers of Outcomes: Linear Models (1)| | |
-|   |    |(린분석) 1. 우리는 모두 거짓말쟁이 & 2. 다양한 지표    || |
-|   |    |(파이숍) Cartridge/Mezzanine 소개 및 설치 & 데모    || |
+| 2 |9/11 |(R) 7. Identifying Drivers of Outcomes: Linear Models (2)| | |
+|   |    |(린분석) 3. 어떤 일을 할 것인가 & 4. 데이터 주도적 접근법과 데이터를 참고하는 접근법  || |
+|   |    |(리눅스) Linux Command Line Basics || |
+| 3 |9/18 |(소비자) 9. When Thinking Is Difficult: Metacognitive Experiences as Information  || |
+|   |    |(R) 8. Reducing Data Complexity (1)| | |
+|   |    |(린분석) 5. 다양한 분석 체계 & 6. 가장 중요한 한 가지 지표 || |
+|   |    |(html) L1: HTML, CSS, and Boxes & L2: CSS Frameworks, Responsive Layouts  || |
+| 4 |10/2|(소비자) 10. Cross-Cultural Issues in Consumer Behavior || |
+|   |    |(R) 8. Reducing Data Complexity (2)| | |
+|   |    |(린분석) 7. 어떤 사업을 하고 있는가 & 8. 사업 모델 1. 전자상거래 || |
+|   |    |(html) L3: Bootstrap and Other Frameworks  || |
+| 5 |10/9|(R) 9. Additional Linear Modeling Topics (1)| | |
+|   |    |(린분석) 9. 사업 모델 2 : SaaS & 10. 사업 모델 3: 무료 모바일 앱 || |
+|   |    |(자바스크립트) Lesson 0 - Getting Up and Running & Lesson 1 - Data Types  || |
+| 6 |10/16|(소비자) 11. Television Viewing and Social Reality: Effects and Underlying Processes || |
+|   |    |(R) 9. Additional Linear Modeling Topics (2)| | |
+|   |    |(린분석) 11. 사업 모델 4 : 미디어 사이트 & 12. 사업 모델 5: 사용자 제작 콘텐츠    || |
+|   |    |(자바스크립트) Lesson 2 - Flow Control    || |
+| 7 |10/23|(R) 10. Confirmatory Factor Analysis and Structural Equation Modeling (1)| | |
+|   |    |(린분석) 13. 사업 모델 6 : 양면 마켓플레이스 & 14. 사업 단계 || |
+|   |    |(Ajax) Intro to AJAX  || |
+| 8 |10/30|(소비자) 12. Normative Influences on Consumption and Conservation Behaviors || |
+|   |    |(R) 10. Confirmatory Factor Analysis and Structural Equation Modeling (2)| | |
+|   |    |(린분석) 15. 단계 1. 공감 & 16. 단계 2. 흡인력 & 17. 단계 3. 바이럴 효과 || |
+|   |    |(파이썬) 파이썬 기초  || |
+| 9 |11/6 |(R) 11. Segmentation: Clustering and Classification (1)| | |
+|   |    |(린분석) 18. 단계 4. 매출 & 19. 단계 5 : 확장 & 20. 사업 모델과 단계에 따라 추적할 지표가 결정된다 || |
+|   |    |(DB) Intro to Relational Databases  || |
+|10 |11/13|(소비자) 13. Taking the Target’s Perspective: The Persuasion Knowledge Model || |
+|   |    |(R) 11. Segmentation: Clustering and Classification (2)| | |
+|   |    |(린분석) 21. 현재 상황 & 22. 전자상거래 : 목표 기준 & 23. SaaS : 목표 기준 || |
+|   |    |(장고) 1. 웹 프로그래밍의 이해 & 2. 파이썬 웹 표준 라이브러리  || |
+|11 |11/20|(R) 12. Association Rules for Market Basket Analysis (1)| | |
+|   |    |(린분석) 24. 무료 모바일 앱 : 목표 기준 & 25. 미디어 사이트 : 목표 기준 & 26. 사용자 제작 콘텐츠 : 목표 기준 || |
+|   |    |(장고) 3. Django 웹 프레임워크   || |
+|12 |11/27|(소비자) 14. The Persuasive Power of Regulatory Fit || |
+|   |    |(R) 12. Association Rules for Market Basket Analysis (2)| | |
+|   |    |(린분석) 27. 양면 마켓플레이스 : 목표 기준 & 28. 목표로 할 기준치가 없는 경우 || |
+|   |    |(장고) 4. Django의 핵심 기능  || |
+|13 |12/4|(R) 13. Choice Modeling (1)| | |
+|   |    |(린분석) 29. 기업 시장 & 30 사내 창업가 & 31. 결론 : 스타트업을 넘어서   || |
+|   |    |(장고) 5. 실습 예제 확장하기 & 6. 웹 서버(Apache)와 연동  || |
+|14 |12/11|(소비자) 15. The Impulsive Consumer: Predicting Consumer Behavior with Implicit Reaction Time Measures || |
+|   |    |(R) 13. Choice Modeling (2)| | |
+|   |    |(파이숍) Cartridge/Mezzanine 활용 1  || |
+|15 |12/18|(파이숍) Cartridge/Mezzanine 활용 2 || |
 
 
 
