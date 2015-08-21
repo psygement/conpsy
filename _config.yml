@@ -6,7 +6,7 @@
 name: 소비자On
 
 # Short bio or description (displayed in the header)
-description: 소비자심리 + 온라인 스킬업 / [github](https://github.com/psygement/conpsy), [관련 스터디들](http://psygement.github.io/), [페이스북 그룹](https://www.facebook.com/groups/psygement/)
+description: 소비자심리 + 온라인 스킬업 
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://cloud.githubusercontent.com/assets/1955312/9403825/3a18230e-4825-11e5-9611-26fbc1cb9936.png
@@ -19,14 +19,14 @@ avatar: https://cloud.githubusercontent.com/assets/1955312/9403825/3a18230e-4825
 footer-links:
   dribbble:
   email:
-  facebook:
+  facebook: https://www.facebook.com/groups/psygement/
   flickr:
-  github: barryclark/jekyll-now
+  github: psygement/conpsy
   instagram:
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
-  twitter: jekyllrb
+  twitter: 
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
