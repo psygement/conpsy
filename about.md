@@ -14,4 +14,6 @@ permalink: /about/
 * [관련 스터디들](http://psygement.github.io/)
 * [페이스북 그룹](https://www.facebook.com/groups/psygement/)
 
+![그룹](https://cloud.githubusercontent.com/assets/1955312/9422301/50aa8b76-48c9-11e5-8703-c389594cf494.jpg)
+
 ### Contact me
