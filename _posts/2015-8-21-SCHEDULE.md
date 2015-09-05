@@ -3,43 +3,7 @@ layout: post
 title: 스터디 일정 & 커리큘럼 & 발표자료
 ---
 
-진행 중 : PART I
-
-## PART I 
-
-* 2015년 5월 22일~ 2015년 8월 28일
-
-| 회차  | 일시   | 내용                                  | 발표자  |              발표자료                    |
-| ----- |:------:| :-------------------------------------|:-------:|:----------------------------------------: |
-| 1 |5/22|(소비자)1. History of Consumer Psychology |이종서|  [발표자료](https://drive.google.com/file/d/0B5JBHuPaVyd_bWRkZ3ZpYmZwNzA/view) |
-|   |    |(소비자)2. 2. The Role of Knowledge Accessibility in Cognition and Behavior (1)|김무성|[발표자료](http://nbviewer.ipython.org/github/psygement/conpsy/blob/master/part1/consumer/ch02/Ch02_The_Role_of_Knowledge_Accessibility_in_Cognition_and_Behavior.ipynb) |
-|   |    |(GA) 1. Digital Analytics Fundamentals    |문현호| [발표자료](https://drive.google.com/file/d/0B5PLVJct9613TUxxZjh1bDN1MGM/view) | 
-|   |    |보강 A) github, github에 웹페이지 만들기, GA 코드 심기    |김무성| 참고자료 |
-| 2 |6/19|(소비자) 2. The Role of Knowledge Accessibility in Cognition and Behavior: Implications for Consumer Information Processing (2) |김무성|[발표자료](http://nbviewer.ipython.org/github/psygement/conpsy/blob/master/part1/consumer/ch02/Ch02_The_Role_of_Knowledge_Accessibility_in_Cognition_and_Behavior.ipynb) |
-|   |    |(소비자)3. Consumer Memory, Fluency, and Familiarity |김승욱|[발표자료](https://drive.google.com/file/d/0B-2yw-flkAy_T1M4S1FuSktvRGs/view)|
-|   |    |(GA) 2. Digital Analytics Fundamentals (1) |김성근| |
-|   |    |보강 B) 웹 사이트의 구조 이해 및, HTML, CSS, Javascript 실습 |심상권| |
-| 3 |7/3 |(GA) 2. Digital Analytics Fundamentals (2) |김성근| |
-|   |    |(소비자) 2. The Role of Knowledge Accessibility in Cognition and Behavior: Implications for Consumer Information Processing (3) |김무성|[발표자료](http://nbviewer.ipython.org/github/psygement/conpsy/blob/master/part1/consumer/ch02/Ch02_The_Role_of_Knowledge_Accessibility_in_Cognition_and_Behavior.ipynb) |
-|   |    |(소비자) 4. Consumer Learning and Expertise |김승욱| |
-| 4 |7/17|(R) 2. An Overview of the R Language |김성근| |
-|   |    |(GA) Google Analytics Review |김성근| |
-| 5 |7/24|(소비자) 3.Psychological Distance and Consumer Behavior: A Construal Level Theory Perspective |이수현| [발표자료](https://drive.google.com/file/d/0B3UXG8FFk3jINjRxUVpEcUZzRUU/view) |
-|   |    |(R) 3. Describing Data|김성근|[발표자료](https://github.com/psygement/conpsy/blob/master/part1/R-marketing/ch03/ch3.md) |
-|   |    |(GA) 3. Google Analytics Platform Principles |김성근|[발표자료](https://drive.google.com/file/d/0B_Ekt7icI0htTzZJSkljMEVaYTQ/view) |
-| 6 |7/31|(소비자) 4. The Rational Unconscious: Conscious versus Unconscious Thought in Complex Consumer |김무성|[발표자료](http://nbviewer.ipython.org/github/psygement/conpsy/blob/master/part1/consumer/ch04/04_The_Rational_Unconscious.ipynb) |
-|   |    |(R) 4. Relationships Between Continuous Variables|김성근|[발표자료](https://github.com/psygement/conpsy/blob/master/part1/R-marketing/ch04/ch4.md) |
-|   |    |(GA) 4. Ecommerce Analytics: From Data to Decisions|김성근|[발표자료] |
-| 7 |8/7|(소비자) 5. Brands and Successful Brand Extensions: A Social Psychology|이수현|[발표자료](https://drive.google.com/file/d/0B3UXG8FFk3jIanZvYkxhUmJzZDQ/view) |
-|   |    |(GA) 5. Mobile App Analytics Fundamentals|김성근|[발표자료](https://drive.google.com/file/d/0B_Ekt7icI0htUnFIbEtqSGl3ZFk/view)|
-| 8 |8/21|(소비자) 6. Compensatory Reasoning in Choice |김성근|[발표자료] |
-|   |    |(R) 5. Comparing Groups: Tables and Visualizations |김성근| |
-|   |    |(GA) 7. Google Tag Manager Fundamental|김무성|[발표자료](http://nbviewer.ipython.org/github/psygement/conpsy/blob/master/part1/ga/study08/GA_TM.ipynb) |
-| 9 |8/28|(소비자) 7. Conditioning as a Source of Liking: There Is Nothing Simple about It |김윤강| |
-|   |    |(R) 6. Comparing Groups: Statistical Tests | | |
-|   |    |(GA) 5. R과 GA 연동 | | |
-
-
+진행 중 : PART II
 
 ## PART II
 
@@ -47,10 +11,10 @@ title: 스터디 일정 & 커리큘럼 & 발표자료
 
 | 회차   | 일시   | 내용                                  | 발표자  |              발표자료                    |
 | -----  |:------:| :-------------------------------------|:-------:|:----------------------------------------: |
-| 1 |9/4 |(소비자) 8. The Lexicon and Grammar of Affect as Information in Consumer Decision Making: The GAIM || |
-|   |    |(R) 7. Identifying Drivers of Outcomes: Linear Models (1)| | |
-|   |    |(린분석) 1. 우리는 모두 거짓말쟁이 & 2. 다양한 지표    || |
-|   |    |(파이숍) Cartridge/Mezzanine 소개 및 설치 & 데모    || |
+| 1 |9/4 |(소비자) 8. The Lexicon and Grammar of Affect as Information in Consumer Decision Making: The GAIM (1) |김무성| [발표자료](http://nbviewer.ipython.org/github/psygement/conpsy/blob/master/part2/consumer/study01/08_The_Lexicon_and_Grammar_of_Affect_as_Information_in_Consumer_Decision_Making.ipynb)|
+|   |    |(R) 7. Identifying Drivers of Outcomes: Linear Models (1)|김성근 | |
+|   |    |(린분석) 1. 우리는 모두 거짓말쟁이 & 2. 다양한 지표    |김성근|[발표자료](https://drive.google.com/file/d/0B_Ekt7icI0htWldfNjJSQkM4Mm8/view) |
+|   |    |(파이숍) Cartridge/Mezzanine 소개 및 설치 & 데모    |김무성|[발표자료](http://nbviewer.ipython.org/github/psygement/conpsy/blob/master/part2/shop/study01/Install_and_Intro_on_docker.ipynb) |
 | 2 |9/11 |(R) 7. Identifying Drivers of Outcomes: Linear Models (2)| | |
 |   |    |(린분석) 3. 어떤 일을 할 것인가 & 4. 데이터 주도적 접근법과 데이터를 참고하는 접근법  || |
 |   |    |(리눅스) Linux Command Line Basics || |
@@ -97,3 +61,40 @@ title: 스터디 일정 & 커리큘럼 & 발표자료
 |   |    |(R) 13. Choice Modeling (2)| | |
 |   |    |(파이숍) Cartridge/Mezzanine 활용 1  || |
 |15 |12/18|(파이숍) Cartridge/Mezzanine 활용 2 || |
+
+
+## PART I 
+
+* 2015년 5월 22일~ 2015년 8월 28일
+
+| 회차  | 일시   | 내용                                  | 발표자  |              발표자료                    |
+| ----- |:------:| :-------------------------------------|:-------:|:----------------------------------------: |
+| 1 |5/22|(소비자)1. History of Consumer Psychology |이종서|  [발표자료](https://drive.google.com/file/d/0B5JBHuPaVyd_bWRkZ3ZpYmZwNzA/view) |
+|   |    |(소비자)2. 2. The Role of Knowledge Accessibility in Cognition and Behavior (1)|김무성|[발표자료](http://nbviewer.ipython.org/github/psygement/conpsy/blob/master/part1/consumer/ch02/Ch02_The_Role_of_Knowledge_Accessibility_in_Cognition_and_Behavior.ipynb) |
+|   |    |(GA) 1. Digital Analytics Fundamentals    |문현호| [발표자료](https://drive.google.com/file/d/0B5PLVJct9613TUxxZjh1bDN1MGM/view) | 
+|   |    |보강 A) github, github에 웹페이지 만들기, GA 코드 심기    |김무성| 참고자료 |
+| 2 |6/19|(소비자) 2. The Role of Knowledge Accessibility in Cognition and Behavior: Implications for Consumer Information Processing (2) |김무성|[발표자료](http://nbviewer.ipython.org/github/psygement/conpsy/blob/master/part1/consumer/ch02/Ch02_The_Role_of_Knowledge_Accessibility_in_Cognition_and_Behavior.ipynb) |
+|   |    |(소비자)3. Consumer Memory, Fluency, and Familiarity |김승욱|[발표자료](https://drive.google.com/file/d/0B-2yw-flkAy_T1M4S1FuSktvRGs/view)|
+|   |    |(GA) 2. Digital Analytics Fundamentals (1) |김성근| |
+|   |    |보강 B) 웹 사이트의 구조 이해 및, HTML, CSS, Javascript 실습 |심상권| |
+| 3 |7/3 |(GA) 2. Digital Analytics Fundamentals (2) |김성근| |
+|   |    |(소비자) 2. The Role of Knowledge Accessibility in Cognition and Behavior: Implications for Consumer Information Processing (3) |김무성|[발표자료](http://nbviewer.ipython.org/github/psygement/conpsy/blob/master/part1/consumer/ch02/Ch02_The_Role_of_Knowledge_Accessibility_in_Cognition_and_Behavior.ipynb) |
+|   |    |(소비자) 4. Consumer Learning and Expertise |김승욱| |
+| 4 |7/17|(R) 2. An Overview of the R Language |김성근| |
+|   |    |(GA) Google Analytics Review |김성근| |
+| 5 |7/24|(소비자) 3.Psychological Distance and Consumer Behavior: A Construal Level Theory Perspective |이수현| [발표자료](https://drive.google.com/file/d/0B3UXG8FFk3jINjRxUVpEcUZzRUU/view) |
+|   |    |(R) 3. Describing Data|김성근|[발표자료](https://github.com/psygement/conpsy/blob/master/part1/R-marketing/ch03/ch3.md) |
+|   |    |(GA) 3. Google Analytics Platform Principles |김성근|[발표자료](https://drive.google.com/file/d/0B_Ekt7icI0htTzZJSkljMEVaYTQ/view) |
+| 6 |7/31|(소비자) 4. The Rational Unconscious: Conscious versus Unconscious Thought in Complex Consumer |김무성|[발표자료](http://nbviewer.ipython.org/github/psygement/conpsy/blob/master/part1/consumer/ch04/04_The_Rational_Unconscious.ipynb) |
+|   |    |(R) 4. Relationships Between Continuous Variables|김성근|[발표자료](https://github.com/psygement/conpsy/blob/master/part1/R-marketing/ch04/ch4.md) |
+|   |    |(GA) 4. Ecommerce Analytics: From Data to Decisions|김성근|[발표자료] |
+| 7 |8/7|(소비자) 5. Brands and Successful Brand Extensions: A Social Psychology|이수현|[발표자료](https://drive.google.com/file/d/0B3UXG8FFk3jIanZvYkxhUmJzZDQ/view) |
+|   |    |(GA) 5. Mobile App Analytics Fundamentals|김성근|[발표자료](https://drive.google.com/file/d/0B_Ekt7icI0htUnFIbEtqSGl3ZFk/view)|
+| 8 |8/21|(소비자) 6. Compensatory Reasoning in Choice |김성근|[발표자료] |
+|   |    |(R) 5. Comparing Groups: Tables and Visualizations |김성근| |
+|   |    |(GA) 7. Google Tag Manager Fundamental|김무성|[발표자료](http://nbviewer.ipython.org/github/psygement/conpsy/blob/master/part1/ga/study08/GA_TM.ipynb) |
+| 9 |8/28|(소비자) 7. Conditioning as a Source of Liking: There Is Nothing Simple about It |김윤강| |
+|   |    |(R) 6. Comparing Groups: Statistical Tests | | |
+|   |    |(GA) 5. R과 GA 연동 | | |
+
+
