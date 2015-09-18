@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: 베이지안 기초 
