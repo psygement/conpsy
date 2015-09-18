@@ -3,7 +3,7 @@ layout: post
 title: 베이지안 기초 
 ---
 
-# Intro Bayesian with PyMC
+## Intro Bayesian with PyMC
 
 * http://nbviewer.ipython.org/github/psygrammer/bayesianPy/blob/master/part1/ch01/ch01_bayes.ipynb
 * http://nbviewer.ipython.org/github/psygrammer/bayesianPy/blob/master/part1/ch02_ex/ch02_ex_prb.ipynb
