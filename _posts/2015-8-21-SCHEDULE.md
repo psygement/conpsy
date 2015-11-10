@@ -103,7 +103,7 @@ title: 스터디 일정 & 커리큘럼 & 발표자료
 |   |    |(html) L1: HTML, CSS, and Boxes & L2: CSS Frameworks, Responsive Layouts (2)  |최혜진| |
 |   |    |(html) L3: Bootstrap and Other Frameworks    |박신홍| |
 | 7 |10/23|(R) 10. Confirmatory Factor Analysis and Structural Equation Modeling (1)|김무성 | |
-|   |    |(린분석) 9. 사업 모델 2 : SaaS & 10. 사업 모델 3: 무료 모바일 앱    |김성근근| |
+|   |    |(린분석) 9. 사업 모델 2 : SaaS & 10. 사업 모델 3: 무료 모바일 앱    |김성근| |
 |   |    |(린분석) 13. 사업 모델 6 : 양면 마켓플레이스 & 14. 사업 단계 || |
 |   |    |(파이썬) 파이썬 기초 (1)  |송찬호| |
 | 8 |10/30|(R) 10. Confirmatory Factor Analysis and Structural Equation Modeling (2)|김무성 | |
