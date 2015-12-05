@@ -12,7 +12,7 @@ title: 스터디 일정 & 커리큘럼 & 발표자료
 | 회차  | 일시   | 내용                                  | 발표자  |              발표자료                    |
 | ----- |:------:| :-------------------------------------|:-------:|:----------------------------------------: |
 | 9 |11/6 |(디지털마케팅1) Course Overview and Digital Tools for Developing Innovative New Products (1) |김성근 |[발표자료](https://drive.google.com/file/d/0B_Ekt7icI0htbUVsUnV4Y1pvUGM/view) |
-|   |    |(린분석) 13. 사업 모델 6 : 양면 마켓플레이스 & 14. 사업 단계 |김성근|[발표자료](https://drive.google.com/file/d/0B_Ekt7icI0htSDhqX0RsZ28zaVU/view|
+|   |    |(린분석) 13. 사업 모델 6 : 양면 마켓플레이스 & 14. 사업 단계 |김성근|[발표자료](https://drive.google.com/file/d/0B_Ekt7icI0htSDhqX0RsZ28zaVU/view)|
 |   |    |(추천시스템) Introduction to Recommender Systems |김무성| |
 |   |    |(파이썬) 파이썬 기초 (3)  |송찬호| |
 |10 |11/13|(디지털마케팅1) Course Overview and Digital Tools for Developing Innovative New Products (2) |김성근 | [발표자료](https://drive.google.com/file/d/0B_Ekt7icI0htbUVsUnV4Y1pvUGM/view)|
