@@ -1,0 +1,356 @@
+---
+title: "CH9. hlm"
+author: "ksg"
+date: "2015년 10월 9일"
+output: 
+  html_document: 
+    keep_md: yes
+---
+
+
+###9.3.1 Some HLM Concepts
+  - Hierarchical models은 고정효과와 무선효과를 구별한다. 
+  
+  - fixed effects(모든 응답에 동일한 효과를 갖는)
+  - 일반회귀분석에서는 모든효과는 fixed effects이다.
+  - 예를들어 7장에서 온라인구매금액은 큰관련성을 나이는 적은관련성을 보였다.
+  - 이는 모든 샘플에 동일한 패턴으로 fixed effects를 예측한것이다.
+  
+  - random effects
+  - 개별 또는 집단의 분포에 따라서 회기계수를 교정하는것을 말한다.
+  - 개별 그리고 전체 샘플의 다른수준을 고려한 이런 모델을 multilevel models이라고 한다.
+  - 모델의 서브셋이 있는것을 mixed effect모델이라고 한다. 
+  - 개별응답에 최소 2가지 이상의 효과가 결합되어 전체 효과를 반영되는 것
+
+  - nested model
+  - mixed effects models의 최종적 변화(전체 샘플의 서브그룹에서만 발생한 변인의 효과)를 nested model이라고한다.
+  - 2개의 다른 프로모션을 각각의 다른 가게에서 실시했을때 가게에따라 다른 랜덤효과가 발생한경우
+  - 각각 다른가계에서 다른 프로모션을 실시한 경우 가게에 따라 다르게 발생한 sales intercepts은 무선효과이고 프로모션의 효가는 내재효과이다.
+
+###9.3.2 Ratings-Based Conjoint Analysis for the Amusement Park
+  - 놀이공원에서 새로운 롤러코스터를 만들기 위해 고개들에게 설문을 실시
+  - 코스터 속도(40,50,60,70)
+  - 높이(200,300,400)
+  - 건축유형(나무, 금속)
+  - 테마(용, 독수리)
+  - 어떤 조합이 가장 인기가 있을지에 대해 알기위해서 고객선호 조사함
+  - 질문 : 나무로 만들어진 400피트 높이의 최고속도는 50mph인 용테마의 롤러코스터에 대해서 1-10점을 평가를 해주시기바랍니다.
+  - HML은 전체 집단의 고정효과와 개인별수준에 따른 무선효과를 측정함 
+
+```{r}
+conjoint.df <- read.csv("http://goo.gl/G8knGV")
+conjoint.df$speed <- factor(conjoint.df$speed)
+conjoint.df$height <- factor(conjoint.df$height)
+summary(conjoint.df)
+head(conjoint.df)
+```
+
+
+  - 데이터구조 : 200명 / 4개 롤러코스터 속성에 따른 16개의 유형 
+```{r}
+set.seed(12814)
+resp.id <- 1:200 # respondent ids
+nques <- 16 # number of conjoint ratings per respondent
+speed <- sample(as.factor(c("40", "50", "60", "70")), size=nques, replace=TRUE)
+height <- sample(as.factor(c("200", "300", "400")), size=nques, replace=TRUE)
+const <- sample(as.factor(c("Wood", "Steel")), size= nques, replace=TRUE)
+theme <- sample(as.factor(c("Dragon", "Eagle")), size=nques, replace=TRUE)
+```
+
+  -create a model matrix for the combinations of features to rate.
+  -multivariate random normal values for respondents’ preferences
+  -model.matrix()함수는 디자인 속성의 리스트를 코딩된 값으로 변환
+  -MASS패키지으 mvrnorm()함수를 사용해서 특정 선호 가중치를 각 응답에 부여
+```{r}
+profiles.df <- data.frame(speed, height, const, theme)
+profiles.model <- model.matrix(~ speed + height + const + theme, data=profiles.df)
+library(MASS) # a standard library in R
+weights <- mvrnorm(length(resp.id),
+                   mu=c(-3, 0.5, 1, 3, 2, 1, 0, -0.5),
+                   Sigma=diag(c(0.2, 0.1, 0.1, 0.1, 0.2, 0.3, 1, 1)))
+```
+
+  - compile the simulated individual ratings
+  - multiply the preference weights by the design matrix to get the total preference (utility) for each design adding some random noise with rnorm()
+  - We convert the utility to a 10-point rating scale using cut()
+  - add the respondent’s result to the overall data frame
+```{r}
+conjoint.df <- NULL 
+for (i in seq_along(resp.id)) {
+  utility <- profiles.model %*% weights[i, ] + rnorm(16) 
+  rating <- as.numeric(cut(utility, 10)) 
+  conjoint.resp <- cbind(resp.id=rep(i, nques), rating, profiles.df)
+  conjoint.df <- rbind(conjoint.df, conjoint.resp)
+}
+```
+
+###9.3.4 An Initial Linear Model
+
+  - conjoint data to check : 1명이 16개씩,200명 3200개 응ㄷ
+```{r}
+summary(conjoint.df)
+str(conjoint.df)
+```
+
+  - by()함수로 각 속성별 평정값의 평균을 확인할수 있음
+  - 높이범위의 중간을 선호하는 응답 확인 (높이=300)
+```{r}
+by(conjoint.df$rating, conjoint.df$height, mean)
+```  
+  
+  - 위계적 회기모델이 아닌 일반선형회기분석 실시 lm함수사용
+  - coefficients 는 선호와의 관련성을 나타낸다
+  - intercept + speed70 + height300 (steel and dragon are included in the intercept)
+  - 3.07+4.49+2.94 = 10.46 points on our 10-point rating scale
+  - wood and eagle have negative values
+```{r}
+ride.lm <- lm(rating ~ speed + height + const + theme, data=conjoint.df)
+summary(ride.lm)
+```    
+
+  - “average”는 이산치의 영향을 받기 때문에 잘못된 결론을 이끌수있다.
+  - 고객의 반은 우드를 반은 스틸을 선호한다면 어떻게 할것인가?
+  - 그렇다면 2개 그룹에 어필하기 위게 다른 2개의 놀이기구를 건설하는것을 제안할수있다. 반면 건축자재에 대한 영향이 없다면 더 경제적인 것으로 결정할수 있다. 
+
+###9.3.5 Hierarchical Linear Model with lme4
+  - 위계적 회기모델에서는 개별수준효과(그룹별 효과)를 추가한다.
+  - 가장 간단한 HML은 intercept 값에서의 변화를 허용한다. 개인차로 인한 무선효과는 절편항에 반영된다
+  - HML에서 fixed effects를 구하는 동시에 응답별 intercept도 측정한다. 
+  - 3가지 방법으로 HLM을 해보자 
+  - 첫째, lme4 package의 lmer()함수로 위계적 모형을 측정해보자
+  - 둘째, lmer()의 포뮬러로 특정 항의 random effects를 측정해보자
+  - 셋째, 각각의 특정그룹에 랜덤 효과가 산출되는 그룹변인을 확인해보자
+  - intercept only, + (1 | resp.id)
+  - specify the random effect and grouping variable  (“|”) as + (predictors | group)
+
+```{r}
+library(lme4)
+ride.hlm1 <- lmer(rating ~ speed + height + const + theme + (1 | resp.id), data=conjoint.df)
+summary(ride.hlm1)
+```   
+ 
+  - estimated a unique intercept term adjustment for each respondent.
+  - The output section labeled “Random effects” shows 3,200 total observations (survey questions) grouped into 200 respondents for which a random effect was estimated
+  - fixef() is an easy way to extract just the fixed (population level) effects
+
+```{r}  
+  fixef(ride.hlm1)
+``` 
+
+  - 계산된 200명에 대한 랜덤이펙트는 intercepts에 반영된다.
+  - ranef() 함수로 200명에 각각에 대한 수정된 절편을 확인
+```{r}  
+head(ranef(ride.hlm1)$resp.id)
+```   
+  
+  - 각 응답의 complete effect는 전체 고정효과+개인별 무선효과로 구성된다
+  - coef() 함수로 complete effect효과를 확인한다
+  - 응답자1은 intercept is 3.07(fixef)−0.65(ranef) = 2.42(coef).
+```{r}
+head(coef(ride.hlm1)$resp.id)
+```
+
+### 9.3.6 The Complete Hierarchical Linear Model
+
+  - lme4 문법
+  - 목표변인을 예측하는 모든 변인을 넣고 랜덤효과를 측정할때 (predictors | group).
+  - 변인들의 하위항목들의 무선효과를 측정할때 (speed+ height + const + theme | resp.id)
+  - random intercept만 측정할때 HLM은 8개의 모수와 200개의 무선효과를측정했다.
+  - full model 은 8개의 고정효과*200개의 무선효과를 측정한다.(3200개의 관측치가 만들어진다)
+  - 2가지 함의 : 계산이 느릴수 있다 / 모수가 많기 때문에 3200개의 관측값이 충분하지 않을수 있다.(안정적으로 수렴하는 모델을 만들기어렵다)
+  - 첫번째 모델과 다른점은 롤러코스터의 4개 변인과 계산된 무선효과를 추가했다는 것이다. 또한 lmer()의 control인수로 maxfun의 iterations회수를 10000을 100000으로 바꿨다.(디폴트 10000)
+```{r}
+ride.hlm2 <- lmer(rating ~ speed + height + const + theme +(
+  speed + height + const + theme | resp.id),
+  data=conjoint.df,
+  control=lmerControl(optCtrl=list(maxfun=100000)))
+```
+  
+  - Fixed effects are extracted with fixef(): 고정효과는 모델1과 같다
+```{r}
+fixef(ride.hlm2)
+```  
+
+  - random effects using ranef(): 각집단(응답)에 대한 모수를 확인
+  - 모델 1과 모수가 모두 다르다 
+```{r}
+head(ranef(ride.hlm2)$resp.id)
+```
+
+  - total coefficients per respondent with coef():
+```{r}
+head(coef(ride.hlm2)$resp.id)  
+```
+
+  - 196번 응답자의 결과로 모델에 따라 어떻게 변하였는지 확인해보자       
+  - coefficients are indeed the sum of the fixed and random effects:
+```{r}
+fixef(ride.hlm2) + ranef(ride.hlm2)$resp.id[196, ]
+coef(ride.hlm2)$resp.id[196, ]
+```
+
+###9.3.7 Summary of HLM with lme4
+  - 다양한 곽측치와 개인 또는 집단별 팩터가 있을때 HLM을 사용해라
+  - HLM은 sample-level 과  group-level의 효과를 모두 측정한다.
+  - 마케팅에서의 customer-level models은 store, country, geographic region, advertising campaign, advertising creative, channel, bundle, brand등 의 변인을 포함하여 HLM으로 측정되길 요구되기도한다.
+  
+##9.4 Bayesian Hierarchical Linear Models*  
+  - Review the concepts of Bayesian linear models and MCMC estimation in Sect. 7.8
+  - Review the concepts of HLM in Sects. 9.3 and 9.3.1
+  
+###9.4.1 Initial Linear Model with MCMCregress()*
+  
+  - 앞에서 사용한 데이터 그대로 사용함  
+```{r}  
+summary(conjoint.df)
+```
+  
+  - using MCMCregress() 단순회귀 분석 실시
+  - 예상대로 전체 효과는 고전적LM모델과 거의 동일하다.
+```{r}
+library(MCMCpack)
+set.seed(97439)
+ride.mc1 <- MCMCregress(rating ~ speed + height + const + theme, data=conjoint.df)
+summary(ride.mc1)
+```
+
+9.4.2 Hierarchical Linear Model with MCMChregress()*
+
+  - hierarchical model using MCMChregress(fixed, random, group, data, r, R)
+  - fixed : formula for fixed effects at the higher level that are the same for all respondents
+  - random : formula for random effects that are estimated for each respondent
+  - group : name of the column with identifiers that group observations for the random effects
+  - data : the data frame with observations
+  - r, R : pooling arguments. We’ll just set them for now; see below for detail
+  
+  - 고정효과 : rating ~ speed + height + const + theme
+  - 무선효과 : ~ speed + height + const + theme (개별모든 값에 대한 효과)
+
+```{r}
+set.seed(97439)
+ride.mc2 <- MCMChregress(fixed = rating ~ speed + height + const + theme, 
+                         random = ~ speed + height + const + theme,
+                         group="resp.id", data=conjoint.df, r=8, R=diag(8))
+```
+
+
+  - To improve estimation, the MCMC model pools information across respondents, allowing estimates
+to be more or less similar to one another based on the data. If several respondents
+dislike a feature, it’s more likely (but not certain) that another randomly selected
+respondent will also dislike it; this expected similarity is used to improve estimates
+given sparse data.
+
+  - R, r값은 풀링의 수준을 조정하는 인수이다.
+  - 일반적으로 r값은 파라미터수와 같게, R은 모델의 값이 따르는 대각행렬의 수와 같도록함
+  - 알고리즘이 최적의 풀링 수준을 결정해준다.
+  - 베이지안 HLM을 실시할 계획이라면 풀링에 대해서 공부를 더 해라 (9.6)
+
+```{R}
+str(ride.mc2)
+```
+
+  - MCMChregress의 결과는 2개의 리스트로 저장됨
+  - ride.mc2$mcmc contains 1,674 columns
+  - 첫째 아이템은 사후확률의 모수로부터 나온것
+  - 8개 회귀계수 셋과 개별속성 선호에 대한 200개값 1600개
+  - 거기에 더해서 few more that describe the overall population distribution
+  - 각각의 파라미터는 각각 응답에 대한 사후확률로부터 1000번 측정되었다
+  - first 8 columns, estimated coefficients for the overall, populationlevel preferences
+  - 결과는 거의 같다. 그럼에도 불구하고 몇분씩 기다려가며 왜 이짓을했나?
+  - 그이유는 in the coefficients it estimated for individual respondents.
+
+```{R}
+summary(ride.mc2$mcmc[ ,1:8])
+```
+
+  - 196응답과 관련된 사후확률 요약값을 보자. 
+  - 196응답자는 나무롤러코스터를 좋아함, 스틸보다 2.5점 높음
+  - 반면 독수리테마를 싫어함 평균보다 1.4점 낮음
+  - 이는 전체 평균값과 상반된 결과임
+  - 그녀는 용 - 나무 - 200높이 - 50속도조합을 좋아함
+  - 예를 들어 최고선호 평점과 동일한 코스터가 이미 놀이공원에 있음
+  - 그리고 제품라인 확장을 해야한다면, 이 자료를 참고할수 있다.
+
+```{r}
+summary(ride.mc2$mcmc[ , grepl(".196", colnames(ride.mc2$mcmc), fixed=TRUE)])
+```
+
+  - MCMC 결과물은 onfidence of estimates을 제공한다.
+  - 그러나 대신 사분위값을 사용하기를 추천한다.
+  - 전체 측정값을 사분위에 집중해서 다시보자
+  - speed70값은  4.12–4.86 in 95 % of the draws from the posterior distribution. 
+  - 이를 모수의 신용구간이라고 표현한다.
+  - 베이지안통계의 장점은 신용구간이 즉시 나온다는것이다. 논의나 가설에 의존하지않고 
+
+```{r}
+summary(ride.mc2$mcmc[ ,1:8])
+```
+
+
+
+###9.4.3 Inspecting Distribution of Preference*
+
+ - 나무와 철재 중 무엇을 선호하는가를 알고자함
+ - 200컬럼의 모든 회기계수를 산출하고
+ - 개인차를 나타내는b.constWood와 전체의 선호에 대한 값인  beta.constWood를 더하
+ - Because we have 1,000 sets of estimates from the MCMC draws, we compute the total (individual plus population mean) for each of the 1,000 draws from the posterior distribution, and summarize those totals. (Do not summarize first and then add.)
+```{r}
+ride.constWood <- summary(ride.mc2$mcmc[ , grepl("b.constWood",
+                                                 colnames(ride.mc2$mcmc))]
+                          +ride.mc2$mcmc[ , "beta.constWood"])
+```
+
+
+  - ride.constWood는 개인별 우드와 스틸에 대한손호 수준에 대한 사후확률을 포함
+  - We plot these to see the distribution of individuals’ preferences for wood coasters:
+```{r}
+hist(ride.constWood$statistics[,1],
+     main="Preference for Wood vs. Steel",
+     xlab="Rating points", ylab="Count of Respondents", xlim=c(-4,4))
+```
+
+  - compare the distribution of preference for 60 mph speed (versus baseline 40mph)
+```{r}
+ride.speed60 <- summary(ride.mc2$mcmc[,grepl("b.speed60",
+                                             colnames(ride.mc2$mcmc))]
+                        + ride.mc2$mcmc[,"beta.speed60"])
+
+hist(ride.speed60$statistics[,1],
+     main="Preference for 60 vs. 40,mph",
+     xlab="Rating points", ylab="Count of Respondents", xlim=c(-4,4))
+```
+
+  - The resulting charts are shown in Fig. 9.3. In the first, we see a wide range across individuals in preference of wood versus steel construction; some respondents have negative preference for wood, and thus prefer steel, while others prefer wood. 
+  - The magnitude is very strong for some, corresponding to a difference in rating of up to
+4 points. 
+  - By comparison, in the second chart, preference for 60 mph coasters over 40 mph is less diverse; all respondents prefer the faster speed.
+
+  - This degree of variation among respondents is known as heterogeneity, and in addition to estimating the parameters (coefficients) for the population (beta.<predictor name> as we saw above), MCMChregress() also estimates their variance and covariance across the population of respondents. 
+  - The results are named VCV.<predictor name>.<predictor name> in the output, where “VCV” abbreviates variance covariance. When the two predictor names are the same, this gives the variance estimate for a single parameter; when they are different, it is the covariance of two parameters.
+
+  - population mean and variance of the wood and 60 mph parameters:
+```{r}
+summary(ride.mc2$mcmc[,c("beta.constWood", "VCV.constWood.constWood",
+                         "beta.speed60","VCV.speed60.speed60")])
+```
+
+
+##9.5 A Quick Comparison of Frequentist & Bayesian HLMs*
+
+
+  - To compare the models  ride.hlm2 and ride.mc2 models 
+  - First fixed effects from each, then we plot them add a 45◦ line to see how closely they align
+```{r}
+fix.hlm <- fixef(ride.hlm2)
+fix.hb <- colMeans(ride.mc2$mcmc[ , 1:8])
+plot(fix.hlm, fix.hb)
+abline(0,1)
+```
+
+  - 196번 응답자 랜덤효과 
+```{r}
+ranef(ride.hlm2)$resp.id[196, ]
+colMeans(ride.mc2$mcmc[ , grepl(".196", colnames(ride.mc2$mcmc),
+                                fixed=TRUE)])
+```
+

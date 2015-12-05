@@ -1,0 +1,258 @@
+---
+title: "12.asso_rules"
+author: "kimsungguen"
+date: "2015년 12월 4일"
+output: 
+  html_document: 
+    keep_md: yes
+---
+
+# Association Rules for Market Basket Analysis
+
+  - 구매와 동시발생 자료로 부터 인사이트를 얻는 전략에 대해 연구할것이다.
+  - 연관규칙분석은 광범위한 데이터셋에서 정보가를 가진 패턴셋을 찾는 접근이다.
+  - 연관규칙분석을 활용해 80,000개 장바구니의 16000개 아이템에 대한 분석을 실시하겠다.
+
+## 1. The Basics of Association Rules
+  - 연관규칙은 기대치 보다 더 많은 빈도로 특정 물건이 함께 구매된 패턴을 찾는것이다.
+  - R package arules 사용할 것이다.
+  - summary() 함수는 169물품들의 9835개 거래를 보여준다.
+  - inspect(head(Groceries)) 장바구니의 물건들을 볼수 있다.
+
+## 2. Retail Transaction Data: Market Baskets
+```{r}
+library(arules)
+library(arulesViz)
+data("Groceries")
+summary(Groceries)
+inspect(head(Groceries, 10))
+```
+
+  - apriori(data, parameters=...) 함수는 apriori알고리즘으로 연관규칙을 찾아준다.
+  - apriori알고리즘은 transactions 리스트중에서 빈번하게 발생하는 아이템 셋을 찾는다.
+  - parameter=list()사용하여 최소지지도와 최소 신뢰도 값을 조절할수 있다.
+  - apriori() 결과해석시 2가지가 핵심이다.
+  - 첫째는 sorting and recoding items 결과에서 보여지는 규칙안에 몇개의 아이템이 있는지 보는것이다.
+  - 이 사례에서는 88개 아이템이 발견된다.
+  - 아이템이 너무많거나 적으면 지지도와 신뢰도 수준을 조정해야한다.
+  - 두번째는 writing 결과에서 보여지는 규칙의 수를 확인하는것이다. 이사례에서는 125개 룰이 발견된다.
+  - 규칙의 수가 너무 적으면 지지도와 신뢰도수준을 낮춰야한다. 규칙의 수가너무 많으면 지지도와 신뢰도를 높여야한다. 
+
+```{r}
+groc.rules <- apriori(Groceries, parameter=list(supp=0.01, conf=0.3, target="rules"))
+```
+ 
+ 
+  - 첫번째규칙에서 {beef}와 {root vegetables}규칙이 발견딘다. 1.7%지지도(장바구니의 1.7에서 해당 조합이 발생), 3.04리프트(단독으로 판매되는것보다 3배더 잘발생)함을 보여준다. 
+  - 이는 가게에서 제품진열이나 쿠폰발행시 고려할수있음
+```{r}
+inspect(subset(groc.rules, lift > 3))
+```
+
+
+## 2.2 Supermarket Data
+
+  - 상품에 대한 설명없이 상품번호로 구성된 바스켓 데이터
+  - 각 행은 1개의 바스켓에 담긴 물건, 88,162거래
+```{r}
+retail.raw <- readLines("http://goo.gl/FfjDAO")
+head(retail.raw)
+tail(retail.raw)
+summary(retail.raw)
+```
+
+  - 이런 텍스트형식의 데이터는 분석을 할수 없음
+  - strsplit(lines," ")함수로 텍스트를 개별아이템으로 분리
+```{r}
+retail.list <- strsplit(retail.raw, " ")
+names(retail.list) <- paste("Trans", 1:length(retail.list), sep="")
+head(retail.list)
+```
+
+  - 데이터 확인 
+```{r}
+library(car)
+str(retail.list)
+some(retail.list)
+rm(retail.raw)
+```
+
+  - 연관규칙분석을 위해 as(..., "transactions")함수로 리스트를 transactions으로 변환시켜야함
+```{r}
+retail.trans <- as(retail.list, "transactions") 
+summary(retail.trans)
+rm(retail.list)
+```
+
+## 2.3 Finding and Visualizing Association Rules
+
+  - apriori(data, parameters=...) 함수로 연관규칙 탐색
+  - minimum support = 0.001 and minimum confidence = 0.4
+  - 해당 신뢰도 지지도에서 5,944 rules 찾음  
+```{r}
+retail.rules <- apriori(retail.trans, parameter=list(supp=0.001, conf=0.4))
+```
+
+  - 연관규칙 시각화
+  - upper left with high lift인 몇개 규칙발견
+```{r}
+library(arulesViz)
+plot(retail.rules)
+```
+  
+  - interactive=TRUE 인수로 다시 시각화 
+  - 인터랙티브 모드에서는 일부지역의 룰을 조사할수 있다.
+  - 플랏 창에 관심있는 영역의 코너를 클릭하고 다시 반대편 코너를 클릭
+  - 해당영역의 규칙 리스트를 볼수있다. 끝낼때는 end클릭
+```{r}
+#plot(retail.rules, interactive=TRUE)
+```
+
+## 3.1 Finding and Plotting Subsets of Rules
+
+  - 일반적인 장바구니 분석의 목적은 높은 리프트의 규칙을 찾는것
+  - lift값을 sorting해서 찾을수 있음 lift가 가장 높은 50개 규칙
+  -  첫번째 두번째 룰은 같은 룰이다(696-699)/  지지도는 약간다름 
+```{r}
+retail.hi <- head(sort(retail.rules, by="lift"), 50)
+inspect(retail.hi)
+```
+
+  - 그래프는 높은수준의 발생패턴을 파악하는데 유용함
+  - 리프트 상위 50개 규칙에 대한 차트 트 plot(..., method="graph")
+  - 원의 크기는 지지도에 비례한다.
+  - 음영은 리프트값에 비례한다.(진할수록 높음)
+  - 다음 아이템들의 군집을 확인하수 있다.
+  - {3402, 3535, 3537}, 
+  - {309, 1080, 1269, 1378, 1379, 1380} 
+  - 39번 아이템은 두 군집과 연관된 아이템이다.
+  - 화살표방향은 레프트핸드->라이트핸드
+```{r}
+plot(retail.hi, method="graph", control=list(type="items"))
+```
+
+
+## 3.2 Using Profit Margin Data with Transactions: An Initial Start
+
+  - 분석가라면 제품의 마진이나 고개의 특성에 관심을 가질것
+  - 현재 데이터에는 가격이나 마진에 대한 내용이 없음
+  - 아이템별 가격을 넣어보자자
+  - 현재 아이템명은 수치형 자료가 아닌 문자이다.
+```{r}
+retail.itemnames <- sort(unique(unlist(as(retail.trans, "list"))))
+head(retail.itemnames); tail(retail.itemnames)
+```
+
+  - 아이템별 가격과 마진에대한 데이터를 nrorm으로만들자 
+``` {r}
+set.seed(03870)
+retail.margin <- data.frame(margin=rnorm(length(retail.itemnames), 
+                                         mean=0.30, 
+                                         sd=0.30))
+quantile(retail.margin$margin)
+```
+
+  - 아이템 이름에 마진을 매칭시켜서 넣자
+```{r}
+rownames(retail.margin) <- retail.itemnames
+head(retail.margin); tail(retail.margin)
+library(car); some(retail.margin)
+```
+
+
+  - 재품명으로 마진값을 추출
+  - 장바구니 상품들의 마진을 합할수 있음 {39, 48}
+  - 39, 48 장바구니 의 마진 합은 -0.09
+  
+```{r}
+retail.margin[c("39", "48"), ]
+sum(retail.margin[c("39", "48"), ])
+```
+
+  - transaction을 다시 리스트로 변환 list함수
+```{r}
+(basket.items <- as(retail.trans[3], "list")[[1]])
+retail.margin[basket.items, ]
+sum(retail.margin[basket.items, ])
+```
+
+## 3.3 Language Brief: A Function for Margin Using an Object’s class
+  - 마진을 산출하는 함수 작성
+  - 깊이있는 프로그래밍을 원치 않으면 스킵할것
+
+## 4. Rules in Non-Transactional Data: Exploring
+
+  - “transaction”은 데이터가 동시발한 지점을 말한다.
+  - 이는 연관규칙이 다른 일반 데이터프레임에도 적용가능함을 의미한다.
+  - 고객세그먼트 탐색에 연관규칙분석을 적용해보자 
+```{r}  
+seg.df <- read.csv("http://goo.gl/qw303p")
+summary(seg.df)
+```
+
+## 4.1 Language Brief: Slicing Continuous Data with cut()
+  - 명목형자료이어야 연관규칙을 적용할수 있음
+  - 3개 연속형 자료(나이, 소득, 자녀수)를 명목형으로 변환
+```{r}
+seg.fac <- seg.df
+seg.fac$age <- cut(seg.fac$age,
+                   breaks=c(0,25,35,55,65,100),
+                   labels=c("19-24", "25-34", "35-54", "55-64", "65+"),
+                   right=FALSE, ordered_result=TRUE)
+summary(seg.fac$age)
+
+seg.fac$income <- cut(seg.fac$income,
+                      breaks=c(-100000, 40000, 70000, 1000000),
+                      labels=c("Low", "Medium", "High"),
+                      right=FALSE, 
+                      ordered_result=TRUE)
+
+
+seg.fac$kids <- cut(seg.fac$kids,
+                    breaks=c(0, 1, 2, 3, 100),
+                    labels=c("No kids", "1 kid", "2 kids", "3+ kids"),
+                    right=FALSE, 
+                    ordered_result=TRUE)
+
+summary(seg.fac)
+```
+
+## 4.2 Exploring Segment Associations
+
+  - 데이터 형식 변환 using as(..., "transactions")
+```{r}
+library(arules)
+library(arulesViz)
+seg.trans <- as(seg.fac, "transactions")
+summary(seg.trans)
+```
+
+  - 연관규칙분석
+```{r}
+seg.rules <- apriori(seg.trans, 
+                     parameter=list(support=0.1, conf=0.4,target="rules"))
+summary(seg.rules)
+```
+
+  - 결과시각화
+```{r}
+plot(seg.rules)
+#plot(seg.rules, interactive=T)
+```
+
+  - 상위 30개 규칙 확인
+```{r}
+seg.hi <- head(sort(seg.rules, by="lift"), 35)
+inspect(seg.hi)
+```
+
+  - 연관규칙 시각화
+```{r}
+plot(seg.hi, method="graph", control=list(type="items"))
+```
+
+  - 리프트 상위35개 이후의 연관규칙 시각화
+```{R}
+seg.next <- sort(seg.rules, by="lift")[36:60]
+plot(seg.next, method="graph", control=list(type="items"))
+```
