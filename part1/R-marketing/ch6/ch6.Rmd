@@ -1,0 +1,234 @@
+---
+title: "6.Comparing Groups: Statistical Tests"
+author: "ksg"
+output: 
+  html_document: 
+    keep_md: yes
+---
+
+###6.1 Data for Comparing Groups
+```{r}
+seg.df <- read.csv("http://goo.gl/qw303p")
+summary(seg.df)
+```
+
+
+###6.2 Testing Group Frequencies: chisq.test()
+
+  - 영가설 : 그룹간의 차이가 없다
+  - 검증 : p값이 0.1~0.05보다 작으면 영가설기가각
+  - 결과 : p값이 0.85로 영가설이 지지됨
+```{r}
+tmp.tab <- table(rep(c(1:4), times=c(25,25,25,20)))
+tmp.tab
+chisq.test(tmp.tab)
+```
+
+
+  - 결과 : p값이 0.05이라 이므로 영가설기각 대립가설지지
+  - 그룹간에 유의미한 차이가 있음
+```{r}
+tmp.tab <- table(rep(c(1:4), times=c(25,25,25,10)))
+tmp.tab
+chisq.test(tmp.tab)
+```
+
+  - 그룹별 N수를 5로 나누
+  - 결과 : p값이 0.66이라 이므로 영가설 지지
+```{r}
+tmp.tab <- tmp.tab/5
+tmp.tab
+chisq.test(tmp.tab)
+```
+
+
+ - Yates’ correction : 비연속적인 데이터를 연속성을 가지도록 교정하는 방법
+ - correct=TRUE, FALSE 인수활용
+```{r}
+chisq.test(table(seg.df$Segment))
+table(seg.df$subscribe, seg.df$ownHome)
+chisq.test(table(seg.df$subscribe, seg.df$ownHome))
+chisq.test(table(seg.df$subscribe, seg.df$ownHome), correct=FALSE)
+```
+
+
+ - 신뢰구간계산시 시뮬레이션 메소드활용
+ - sim=TRUE, B=10000 인수사용 
+ - p-value indicates the proportion of those simulations with differences between the cell counts and marginal proportions at least as large as the ones in the observed table.
+```{r}
+chisq.test(table(seg.df$subscribe, seg.df$ownHome), sim=TRUE, B=10000)
+```
+
+
+###6.3 Testing Observed Proportions: binom.test()
+
+  - 12 groups of Seattle fans and 8 groups of Denver fans
+```{r}
+binom.test(12, 20, p=0.5)
+```
+
+
+###6.3.1 About Confidence Intervals
+  - 95% 신뢰구간: 임의 추출한 값이 해당 구간에 포함될 확률이 95%임을 의미
+
+###6.3.2 More About binom.test() and Binomial Distributions
+
+  - 200명중 120명의 시애틀팬을 관찰했다. 
+  - p값이 0.05보다 작으면 통계적으로 유의미한 차이가 있음을 의미한다.
+  - 확률밀도, 누적확률밀도  
+```{r}
+binom.test(120, 200, p=0.5)
+dbinom(8:12, 20, 0.5)
+sum(dbinom(8:12, 20, 0.5))
+```
+
+  - 이항분포검사는 실제값보다 신뢰구간을 적게 잡는다.
+  - 이에 대한 대안으로 Agresti–Coull method를 사용한다.
+  - binom 패키지의 binom.confint함수를 쓴다.
+  - binom 패키지는 베이지안 버전의 이항분포 검사를 포함하고있다.
+```{r}
+#install.packages("binom")
+library(binom)
+binom.confint(12, 20, method="ac")
+binom.confint(12, 20, method="bayes")
+```
+
+
+  - 하한값?은 인위적인것으로 무시해도된다. 
+  - 그룹중 0명을 관찰했다고 가정했을경우 그룹내  팬들이 석여 발생할 확률은 0~19%이다.
+```{r}
+binom.confint(0, 20, method="ac")
+```
+
+###6.4 Testing Group Means: t.test()
+
+  - p-value of 0.0012
+  - 95% 신뢰구간의 차이는 −3,007 에서 −12,080
+  - 자택여부에 따른 소득의 차이가 없다는 영가설은 기각된다.
+```{r}
+hist(seg.df$income) 
+with(seg.df, hist(income[ownHome=="ownYes"]))
+with(seg.df, hist(income[ownHome=="ownNo"])) 
+t.test(income~ownHome, data=seg.df)
+```
+
+
+ - data=subset(data, condition) 을 활용해 두그룹간의 비교를 반복할수 있음
+ - t검정은 오직 두그룹을 비교할때만 사용가능
+ - income을 각 세크먼트별로 검사해볼수 있지만 좋은방법이 아님
+ - 다중 검정은 비논리적인 차이점을 발견하게될 가능성이 높아짐
+```{r}
+t.test(income~ownHome, data=subset(seg.df, Segment=="Travelers"))
+```
+
+###6.5 Testing Multiple Group Means: ANOVA
+
+  - ANOVA는 한개이상의 다중 변인들을 다룬다
+  - 변인들간의 상호작용까지 측정한다.
+  - aov(formula, data) : 모델 설정 
+  - anova(model) : 변량분석 값을 요야해줌
+  - segment is a significant predictor
+```{r}
+seg.aov.own <- aov(income ~ ownHome, data=seg.df) 
+anova(seg.aov.own)
+```
+
+  - segment 유의미한  predictor이다.
+  - ownership 유의미하지 않은 predictor이다.
+```{r}
+anova(aov(income ~ Segment + ownHome, data=seg.df)) 
+```
+
+  - ownership과 segment 상호작용은 유의하지 않다.
+```{r}
+anova(aov(income~Segment * ownHome, data=seg.df))
+```
+
+
+###6.5.1 Model Comparison in ANOVA
+
+  - 아래 사례에 첫번째 모델은 두번째모델에 포함되어있음
+```{r}
+anova(aov(income ~ Segment, data=seg.df),
+      aov(income ~ Segment + ownHome, data=seg.df))
+```
+
+
+###6.5.2 Visualizing Group Confidence Intervals
+
+  - 변량분석을 시각화하는 방법은 그룹별 평균값의 신뢰구간을 그리는것
+  - multcomp패키지 glht(model) 함수(general linear hypothesis)
+  - aov() model has an intercept term remove the intercept by adding “-1” 
+```{r}
+#install.packages("multcomp")
+library(multcomp)
+seg.aov <- aov(income ~ Segment, data=seg.df)
+glht(seg.aov)
+
+seg.aov <- aov(income ~ -1 + Segment, data=seg.df)
+glht(seg.aov)
+
+par(mar=c(6,10,2,2)) # adjusts margins to preserve axis labels
+plot(glht(seg.aov), xlab="Income", main="Average Income by Segment (95% CI)")
+```
+
+###6.5.3 Variable Selection in ANOVA: Stepwise Modeling*
+
+  - step(model) 함수는 자동으로 변수를 더하거나 제거해줌
+  - optionsbackward () 큰셋에서 작은 셋으로 변수를 제거
+  - forward () 작은셋에서 큰셋으로 변수를 추가
+  - 상호작용효과 : such as “.ˆ2” fortwo-way interactions
+  - “best” model as income ∼ Segment.
+```{r}
+seg.aov.step <- step(aov(income ~ ., data=seg.df))
+anova(seg.aov.step)
+```
+
+
+###6.6 Bayesian ANOVA: Getting Started
+  - 베이지안 설명 : 역사, 중요
+
+###6.6.2 Basics of Bayesian ANOVA
+  - MCMCpack 패키지는 빠르고 강력한 베이지안 툴이다.
+  - 지금은 단순한 BayesFactor 패키지로 해본다
+```{r}
+#install.packages("MCMCpack")
+#install.packages("BayesFactor")
+library(BayesFactor)
+```
+
+
+  - MCMCpack 패키지는 빠르고 강력한 베이지안 툴이다.
+  - lmBF(formula, data) 함수사요
+  - segment로 income을 모델링하는 선형모델로 변량분석을 함
+  - 난수시드 활용 : this function will take draws from the posterior distribution.
+
+```{r}
+set.seed(96761)
+library(BayesFactor)
+seg.bf1 <- lmBF(income ~ Segment, data=seg.df)
+```
+
+
+  - Model comparison in BayesFactor is performed by using the “/” operator to find the ratio of the models’ Bayes Factors
+```{R}
+seg.bf2 <- lmBF(income ~ Segment + ownHome, data=seg.df)
+seg.bf1 / seg.bf2
+```
+
+  - To find the model parameters and their credible ranges, we use the posterior (model, index, draws) command to draw 10,000 samples of the possible parameters from model 1
+```{R}
+seg.bf.chain <- posterior(seg.bf1, 1, iterations = 10000)
+plot(seg.bf.chain[, 1:6])
+```
+
+
+###6.6.3 Inspecting the Posterior Draws*
+  
+  - examine the parameters as expressed in our posterior draw chain.
+  - A simple summary() of the chain shows us the estimates:  
+```{R}
+summary(seg.bf.chain)
+head(seg.bf.chain)
+seg.bf.chain[1:4, 1:5]
+```

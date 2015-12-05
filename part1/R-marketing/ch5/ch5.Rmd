@@ -1,0 +1,267 @@
+---
+title: "ch5"
+author: "kimsungguen"
+date: "2015년 12월 5일"
+output: 
+  html_document: 
+    keep_md: yes
+---
+
+## 5. Comparing Groups: Tables and Visualizations
+### 5.1 Simulating Consumer Segment Data
+  - 마케팅 분석은 종종 그룹간의 차이점을 분석함
+  - 소비자의 세그먼트 데이터로 비교를해볼것이다.
+  - 생성할 데이터 원본(케이블 방송 가입자 데이터와 유사)
+
+```{r}
+seg.df <- read.csv("http://goo.gl/qw303p")
+```
+
+```{r}
+summary(seg.df)
+```
+
+
+```{r}
+head(seg.df)
+```
+
+```{r}
+str(seg.df)
+```
+
+
+  - 데이터 구조 정의(변수, 데이터 타입 등)
+  - 변수의 분포를 결정하는 모수 설정 (평균, 편차 등)
+  - 전체 데이터를 랜덤하게 채워넣는 반복코드 사용(for 문)
+
+```{r}
+segVars <- c("age","gender","income","kids","ownHome","subscribe") #데이터 변수
+segVarType <- c("norm","binom","norm","pois","binom","binom") #변수생성 확률분포
+segNames <- c("Suburb mix","Urban hip","Travelers","Moving up") #세그먼트
+segSize <- c(100,50,80,70)   #세그먼트별 data 크기
+
+#세그먼트별 각 변인의 평균(나이,성별,수익) , 이산확률(성별,자가,회원), 포아송람다(자녀)
+segMeans <- matrix( c(    
+  40, 0.5, 55000, 2, 0.5, 0.1,
+  24, 0.7, 21000, 1, 0.2, 0.2,
+  58, 0.5, 64000, 0, 0.7, 0.05,
+  36, 0.3, 52000, 2, 0.3, 0.2   ), ncol=length(segVars), byrow=TRUE)
+
+segMeans
+```
+
+```{r}
+#세그먼트별 각 변인의 표준편차(나이, 수입)
+segSDs <- matrix ( c(
+  5, NA, 12000, NA, NA, NA,
+  2, NA, 5000, NA, NA, NA,
+  8, NA, 21000, NA, NA, NA,
+  4, NA, 10000, NA, NA, NA ), ncol=length(segVars), byrow=TRUE)
+
+segSDs
+```
+
+  - for문, if~else문 활용하여 데이터 생성
+```{r}
+seg.df <- NULL
+set.seed(02554)
+for (i in seq_along(segNames)) { 
+ cat(i, segNames[i], "\n")
+
+ this.seg <- data.frame(matrix(NA, nrow = segSize[i], ncol=length(segVars)))
+ for (j in seq_along(segVars)) {
+  if (segVarType[j] == "norm") {
+    this.seg[,j] <- rnorm(segSize[i], mean=segMeans[i,j], sd=segSDs[i,j])
+  } else if (segVarType[j] == "pois") {
+    this.seg[,j] <- rpois(segSize[i], lambda=segMeans[i,j])
+  } else if (segVarType[j] == "binom") {
+    this.seg[,j] <- rbinom(segSize[i], size=1, prob=segMeans[i,j])
+  } else {
+    stop("Bad segment data type: ", segVarType[i])
+  }
+ }
+ seg.df <- rbind(seg.df, this.seg)
+}
+```
+
+  - 변인 이름 추가
+```{r}
+head(seg.df)
+```
+
+```{r}
+names(seg.df) <- segVars
+head(seg.df)
+```
+
+
+  - 세그먼트 변수 추가하고, 명목형 변수 처리
+
+```{r}
+seg.df$Segment <- factor(rep(segNames, times=segSize))
+head(seg.df)
+```
+  
+  - 이산형 데이터 라벨부여(자가, 성별, 구독여부)
+```{r}
+seg.df$ownHome <- factor(seg.df$ownHome, labels=c("ownNo","ownYes"))
+seg.df$gender  <- factor(seg.df$gender, labels=c("Female", "Male"))
+seg.df$subscribe <- factor(seg.df$subscribe, labels=c("subNo", "subYes"))
+```
+
+  - 최종데이터
+```{r}
+head(seg.df)
+```
+
+
+### 5.2 Finding Descriptives by Group
+  - 특정 세그먼트 데이터 및 통계량 확인
+
+```{r}
+head(seg.df$incom[seg.df$Segment == "Moving up"])
+seg.df$incom[seg.df$Segment == "Moving up"]
+mean(seg.df$income[seg.df$Segment == "Moving up"])
+mean(seg.df$income[seg.df$Segment == "Moving up" & seg.df$subscribe == "subNo"])
+```
+  - by 함수 사용하여 특정 변수기준으로 통계량 확인
+
+```{r}
+by(seg.df$income, seg.df$Segment, mean)
+by(seg.df$income, list(seg.df$Segment, seg.df$subscribe), mean)
+
+```
+
+
+  - aggregate 함수 사용하여 특정 변수기준으로 통계량 확인
+```{r}
+aggregate(seg.df$income, list(seg.df$Segment), mean)
+```
+
+```{r}
+seg.income.mean <- aggregate(seg.df$income, list(seg.df$Segment), mean)
+seg.income.mean
+```
+
+  - car 패키지 some 함수로 데이터 확인
+```{r}
+library(car)
+some(seg.df)
+```
+
+### 5.2.1 Language Brief: Basic Formula Syntax
+  - 포뮬러 사용, Multiple variable formula
+
+```{r}
+#aggregate(seg.df$income, list(seg.df$Segment), mean) 같은 
+aggregate(income ~ Segment, data=seg.df, mean)
+```
+
+```{r}
+aggregate(income ~ Segment + ownHome, data = seg.df, mean)
+```
+
+```{r}
+aggregate(income ~ Segment + ownHome + subscribe, data = seg.df, mean)
+```
+
+```{r}
+agg.data <- aggregate(income ~ Segment + ownHome, data = seg.df, mean)
+agg.data
+```
+
+```{r}
+agg.data[2,]
+agg.data[2,3]
+```
+
+  - compute frequencies using table(factor1, factor2, …)
+```{r}
+with(seg.df, table(Segment, ownHome))
+with(seg.df, table(kids, Segment))
+```
+
+  - xtabs(formula, data) works with counts to find their total
+```{r}
+xtabs(kids ~ Segment, data = seg.df)
+aggregate(kids ~ Segment, data=seg.df, sum)
+```
+
+```{r}
+seg.tab <- with(seg.df, table(kids, Segment))
+apply(seg.tab*0:7, 2, sum)
+```
+```{r}
+seg.tab <- with(seg.df, table(kids, Segment))
+colSums(seg.tab*0:7)
+```
+
+###5.2.3 Visualization by Group: Frequencies and Proportions
+
+```{r}
+require(lattice)
+```
+
+```{r}
+histogram(~subscribe | Segment, data = seg.df)
+```
+
+```{r}
+colSums(seg.tab*0:7)
+```
+
+```{r}
+histogram(~subscribe | Segment, data = seg.df, type="count", 
+          layout=c(4,1), col=c("burlywood", "darkolivegreen"))
+```
+
+```{r}
+histogram(~subscribe | Segment + ownHome, data=seg.df)
+```
+```{r}
+prop.table(table(seg.df$subscribe, seg.df$Segment), margin=2)          
+```
+
+```{r}
+barchart(prop.table(table(seg.df$subscribe, seg.df$Segment), margin=2)[2,],
+         xlab="Subscriber proportion by Segment", col = "darkolivegreen")
+```         
+### 5.2.4 Visualization by Group: Continuous Data
+
+```{r}
+seg.mean <- aggregate(income ~ Segment, data=seg.df, mean)
+library(lattice)
+barchart(income~Segment, data = seg.mean, col="grey")
+```
+
+```{r}
+seg.income.agg <- aggregate(income ~ Segment + ownHome, data = seg.df, mean)
+barchart(income ~ Segment, data=seg.income.agg,
+         groups=ownHome, auto.key=TRUE,
+         par.setting = simpleTheme(col=terrain.colors(2)))
+```
+
+```{r}
+boxplot(income ~ Segment, data=seg.df, yaxt="n", ylab="Income ($k)")
+ax.seq <- seq(from = 0, to = 120000, by=20000)
+axis(side=2, at=ax.seq, labels=paste(ax.seq/1000, "k", sep=""), las=1)
+```
+
+```{r}
+bwplot(Segment ~ income, data=seg.df, horizontal=TRUE, xlab="Income")
+```
+
+```{r}
+bwplot(Segment ~ income | ownHome, data=seg.df, horizontal=TRUE, xlab="Income")
+```
+
+### Key point
+  - writing for() loops, use seq along() instead of 1:length()
+  - if() and for() blocks, always use brackets (“{” and “}”)
+  - When creating a data object, pre-populate it with missing data (NA) and then fill it in
+  - by() command can split up data and automatically apply functions such as mean() and summary()
+  - aggregate() is even more powerful: it understands formula models and produces
+  - Frequency of occurrence can be found with table()/ xtabs() is useful
+  - Plots for continuous data by factor may use barchart(), or even better, boxand-whiskers plots with boxplot().
+  - bwplot() command a reusable, indexable object with its results
