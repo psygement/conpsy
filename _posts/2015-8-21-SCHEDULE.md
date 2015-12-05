@@ -93,7 +93,7 @@ title: 스터디 일정 & 커리큘럼 & 발표자료
 |   |    |(리눅스) Linux Command Line Basics |김무성| |
 | 3 |9/18 |(소비자) (보강) 베이지안 통계기초 & PyMC 실습  |김무성| |
 | 4 |10/2|(소비자) 8. The Lexicon and Grammar of Affect as Information in Consumer Decision Making: The GAIM (2) |김무성| |
-|   |    |(R) 9. Additional Linear Modeling Topics (1)|김성근[발표자료](https://github.com/psygement/conpsy/blob/master/part1/R-marketing/ch9/ch9_1.md) |
+|   |    |(R) 9. Additional Linear Modeling Topics (1)|김성근|[발표자료](https://github.com/psygement/conpsy/blob/master/part1/R-marketing/ch9/ch9_1.md) |
 |   |    |(린분석) 5. 다양한 분석 체계 & 6. 가장 중요한 한 가지 지표 |최혜진|[발표자료](https://drive.google.com/file/d/0B_Ekt7icI0htdllRS3J6NWotbGM/view) |
 |   |    |(html) L1: HTML, CSS, and Boxes & L2: CSS Frameworks, Responsive Layouts (1)   |최혜진| |
 | 5 |10/9|(소비자) (놀러On) 아이트래커 특강|최준혁 | |
