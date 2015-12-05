@@ -11,35 +11,21 @@ title: 스터디 일정 & 커리큘럼 & 발표자료
 
 | 회차  | 일시   | 내용                                  | 발표자  |              발표자료                    |
 | ----- |:------:| :-------------------------------------|:-------:|:----------------------------------------: |
-| 9 |11/6 |(디지털마케팅1) Course Overview and Digital Tools for Developing Innovative New Products (1) |김성근 | |
-|   |    |(린분석) 13. 사업 모델 6 : 양면 마켓플레이스 & 14. 사업 단계 |김성근| |
+| 9 |11/6 |(디지털마케팅1) Course Overview and Digital Tools for Developing Innovative New Products (1) |김성근 |[발표자료](https://drive.google.com/file/d/0B_Ekt7icI0htbUVsUnV4Y1pvUGM/view) |
+|   |    |(린분석) 13. 사업 모델 6 : 양면 마켓플레이스 & 14. 사업 단계 |김성근|[발표자료](https://drive.google.com/file/d/0B_Ekt7icI0htSDhqX0RsZ28zaVU/view|
 |   |    |(추천시스템) Introduction to Recommender Systems |김무성| |
 |   |    |(파이썬) 파이썬 기초 (3)  |송찬호| |
-|10 |11/13|(디지털마케팅1) Course Overview and Digital Tools for Developing Innovative New Products (2) |김성근 | |
-|   |    |(린분석) 15. 단계 1. 공감 & 16. 단계 2. 흡인력 & 17. 단계 3. 바이럴 효과 |최혜진| |
+|10 |11/13|(디지털마케팅1) Course Overview and Digital Tools for Developing Innovative New Products (2) |김성근 | [발표자료](https://drive.google.com/file/d/0B_Ekt7icI0htbUVsUnV4Y1pvUGM/view)|
 |   |    |(R) 11. Segmentation: Clustering and Classification |박상진 | |
 |   |    |(추천시스템) Introduction to Non-Personalized Recommenders (1) |박상진| |
-|   |    |(Ajax) Intro to AJAX  |박신홍| |
-|11 |11/20|(디지털마케팅1) Digital Tools for Persuading Customers to Buy Your Products | | |
-|   |    |(린분석) 18. 단계 4. 매출 & 19. 단계 5 : 확장 & 20. 사업 모델과 단계에 따라 추적할 지표가 결정된다. || |
+|   |    |(Ajax) Intro to AJAX  |박신홍|[발표자료](https://drive.google.com/file/d/0B4plsZbXCygJTmU0cVBUTUdud1U/view)|
+|11 |11/20|(디지털마케팅1) Digital Tools for Persuading Customers to Buy Your Products |김성근 |[발표자료](https://drive.google.com/file/d/0B_Ekt7icI0htY0JkQ0lMU29UVEk/view) |
 |   |    |(추천시스템) Introduction to Non-Personalized Recommenders (2) |박상진| |
-|   |    |(DB) Intro to Relational Databases  || |
-|12 |11/27|(디지털마케팅1) Digital Tools for Effectively Distributing Your Products || |
-|   |    |(린분석) 21. 현재 상황 & 22. 전자상거래 : 목표 기준 & 23. SaaS : 목표 기준 || |
-|   |    |(R) 12. Association Rules for Market Basket Analysis |김승욱| |
-|   |    |(장고) 1. 웹 프로그래밍의 이해 & 2. 파이썬 웹 표준 라이브러리  || |
-|13 |12/4|(디지털마케팅1) Digital Tools for Setting the Right Prices for Your Products| | |
-|   |    |(린분석) 24. 무료 모바일 앱 : 목표 기준 & 25. 미디어 사이트 : 목표 기준 & 26. 사용자 제작 콘텐츠 : 목표 기준 || |
-|   |    |(추천시스템) Introduction to Content-Based Recommenders || |
-|   |    |(장고) 3. Django 웹 프레임워크   || |
-|14 |12/11|(디지털마케팅2) Course Overview and Digital Influence on Marketing || |
-|   |    |(린분석) 27. 양면 마켓플레이스 : 목표 기준 & 28. 목표로 할 기준치가 없는 경우 || |
+|   |    |(디지털마케팅1) Digital Tools for Effectively Distributing Your Products |김혜원|[발표자료](https://drive.google.com/file/d/0B9nhk-tuzlXPMEtjQzNvMTdxYUE/view) |
+|   |    |(장고) 1. 웹 프로그래밍의 이해 & 2. 파이썬 웹 표준 라이브러리  |정광윤|[발표자료](http://bit.ly/1NHi2N7) |
+|13 |12/4|(R) 12. Association Rules for Market Basket Analysis|김성근 |[발표자료](https://github.com/psygement/conpsy/blob/master/part1/R-marketing/ch12/ch12.md) |
 |   |    |(R) 13. Choice Modeling |김무성 | |
-|   |    |(장고) 4. Django의 핵심 기능  || |
-|15 |12/18|(디지털마케팅2) Basics of Web Analytics || |
-|   |    |(린분석) 29. 기업 시장 & 30 사내 창업가 & 31. 결론 : 스타트업을 넘어서 || |
-|   |    |(추천시스템) Introduction to User-User Collaborative Filtering || |
-|   |    |(장고) 5. 실습 예제 확장하기 & 6. 웹 서버(Apache)와 연동  || |
+
 
 
 ## PART I 
