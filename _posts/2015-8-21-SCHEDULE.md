@@ -54,7 +54,7 @@ title: 스터디 일정 & 커리큘럼 & 발표자료
 |   |    |보강 A) github, github에 웹페이지 만들기, GA 코드 심기    |김무성| 참고자료 |
 | 2 |6/19|(소비자) 2. The Role of Knowledge Accessibility in Cognition and Behavior: Implications for Consumer Information Processing (2) |김무성|[발표자료](http://nbviewer.ipython.org/github/psygement/conpsy/blob/master/part1/consumer/ch02/Ch02_The_Role_of_Knowledge_Accessibility_in_Cognition_and_Behavior.ipynb) |
 |   |    |(소비자)3. Consumer Memory, Fluency, and Familiarity |김승욱|[발표자료](https://drive.google.com/file/d/0B-2yw-flkAy_T1M4S1FuSktvRGs/view)|
-|   |    |(GA) 2. Digital Analytics Fundamentals (1) |김성근|https://drive.google.com/file/d/0B_Ekt7icI0htTzZJSkljMEVaYTQ/view |
+|   |    |(GA) 2. Digital Analytics Fundamentals (1) |김성근|[발표자료](https://drive.google.com/file/d/0B_Ekt7icI0htTzZJSkljMEVaYTQ/view) |
 |   |    |보강 B) 웹 사이트의 구조 이해 및, HTML, CSS, Javascript 실습 |심상권| |
 | 3 |7/3 |(GA) 2. Digital Analytics Fundamentals (2) |김성근|[발표자료](https://drive.google.com/file/d/0B_Ekt7icI0htTzZJSkljMEVaYTQ/view) |
 |   |    |(소비자) 2. The Role of Knowledge Accessibility in Cognition and Behavior: Implications for Consumer Information Processing (3) |김무성|[발표자료](http://nbviewer.ipython.org/github/psygement/conpsy/blob/master/part1/consumer/ch02/Ch02_The_Role_of_Knowledge_Accessibility_in_Cognition_and_Behavior.ipynb) |
