@@ -89,7 +89,7 @@ title: 스터디 일정 & 커리큘럼 & 발표자료
 |   |    |(html) L3: Bootstrap and Other Frameworks    |박신홍| |
 | 7 |10/23|(R) 10. Confirmatory Factor Analysis and Structural Equation Modeling (1)|김무성 | |
 |   |    |(린분석) 9. 사업 모델 2 : SaaS & 10. 사업 모델 3: 무료 모바일 앱    |김성근|[발표자료](https://drive.google.com/drive/folders/0B_Ekt7icI0htWEF2azY3ZXNfRnM) |
-|   |    |(린분석) 13. 사업 모델 6 : 양면 마켓플레이스 & 14. 사업 단계 || |
+|   |    |(린분석) 13. 사업 모델 6 : 양면 마켓플레이스 & 14. 사업 단계 |김성근|[발표자료](https://drive.google.com/file/d/0B_Ekt7icI0htSDhqX0RsZ28zaVU/view) |
 |   |    |(파이썬) 파이썬 기초 (1)  |송찬호| |
 | 8 |10/30|(R) 10. Confirmatory Factor Analysis and Structural Equation Modeling (2)|김무성 | |
 |   |    |(린분석) 11. 사업 모델 4 : 미디어 사이트 & 12. 사업 모델 5: 사용자 제작 콘텐츠    |김성근|[발표자료](https://drive.google.com/file/d/0B_Ekt7icI0htS3duaUlGTWY3NFE/view) |
