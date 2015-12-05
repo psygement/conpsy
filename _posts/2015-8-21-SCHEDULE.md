@@ -59,7 +59,7 @@ title: 스터디 일정 & 커리큘럼 & 발표자료
 | 3 |7/3 |(GA) 2. Digital Analytics Fundamentals (2) |김성근|[발표자료](https://drive.google.com/file/d/0B_Ekt7icI0htTzZJSkljMEVaYTQ/view) |
 |   |    |(소비자) 2. The Role of Knowledge Accessibility in Cognition and Behavior: Implications for Consumer Information Processing (3) |김무성|[발표자료](http://nbviewer.ipython.org/github/psygement/conpsy/blob/master/part1/consumer/ch02/Ch02_The_Role_of_Knowledge_Accessibility_in_Cognition_and_Behavior.ipynb) |
 |   |    |(소비자) 4. Consumer Learning and Expertise |김승욱|[발표자료](https://drive.google.com/file/d/0B-2yw-flkAy_T1M4S1FuSktvRGs/view) |
-| 4 |7/17|(R) 2. An Overview of the R Language |김성근| |
+| 4 |7/17|(R) 2. An Overview of the R Language |김성근|[발표자료](https://github.com/psygement/conpsy/blob/master/part1/R-marketing/ch2/R-marketing_ch2.md) |
 |   |    |(GA) Google Analytics Review |김성근| |
 | 5 |7/24|(소비자) 3.Psychological Distance and Consumer Behavior: A Construal Level Theory Perspective |이수현| [발표자료](https://drive.google.com/file/d/0B3UXG8FFk3jINjRxUVpEcUZzRUU/view) |
 |   |    |(R) 3. Describing Data|김성근|[발표자료](https://github.com/psygement/conpsy/blob/master/part1/R-marketing/ch03/ch3.md) |
@@ -70,10 +70,10 @@ title: 스터디 일정 & 커리큘럼 & 발표자료
 | 7 |8/7|(소비자) 5. Brands and Successful Brand Extensions: A Social Psychology|이수현|[발표자료](https://drive.google.com/file/d/0B3UXG8FFk3jIanZvYkxhUmJzZDQ/view) |
 |   |    |(GA) 5. Mobile App Analytics Fundamentals|김성근|[발표자료](https://drive.google.com/file/d/0B_Ekt7icI0htUnFIbEtqSGl3ZFk/view)|
 | 8 |8/21|(소비자) 6. Compensatory Reasoning in Choice |김성근|[발표자료](https://drive.google.com/file/d/0B_Ekt7icI0htTERtUU1uX0lrQkU/view) |
-|   |    |(R) 5. Comparing Groups: Tables and Visualizations |김성근| |
+|   |    |(R) 5. Comparing Groups: Tables and Visualizations |김성근|[발표자료](https://github.com/psygement/conpsy/blob/master/part1/R-marketing/ch5/ch5.md) |
 |   |    |(GA) 7. Google Tag Manager (1) Fundamental|김무성|[발표자료](http://nbviewer.ipython.org/github/psygement/conpsy/blob/master/part1/ga/study08/GA_TM.ipynb) |
 | 9 |8/28|(소비자) 7. Conditioning as a Source of Liking: There Is Nothing Simple about It |김성근|[발표자료](https://drive.google.com/file/d/0B_Ekt7icI0htcEdldklkeTlYa2s/view) |
-|   |    |(R) 6. Comparing Groups: Statistical Tests |김성근 | |
+|   |    |(R) 6. Comparing Groups: Statistical Tests |김성근 |[발표자료](https://github.com/psygement/conpsy/blob/master/part1/R-marketing/ch6/ch6.md) |
 |   |    |(R) 7. Identifying Drivers of Outcomes: Linear Models |유광현 | |
 |   |    |(GA) 7. Google Tag Manager (2) |김무성 | |
 
@@ -85,27 +85,26 @@ title: 스터디 일정 & 커리큘럼 & 발표자료
 | 회차   | 일시   | 내용                                  | 발표자  |              발표자료                    |
 | -----  |:------:| :-------------------------------------|:-------:|:----------------------------------------: |
 | 1 |9/4 |(소비자) 8. The Lexicon and Grammar of Affect as Information in Consumer Decision Making: The GAIM (1) |김무성| [발표자료](http://nbviewer.ipython.org/github/psygement/conpsy/blob/master/part2/consumer/study01/08_The_Lexicon_and_Grammar_of_Affect_as_Information_in_Consumer_Decision_Making.ipynb)|
-|   |    |(R) 8. Reducing Data Complexity (1)|김성근 | |
+|   |    |(R) 8. Reducing Data Complexity (1)|김성근 |[발표자료](https://github.com/psygement/conpsy/blob/master/part1/R-marketing/ch8/ch8.md) |
 |   |    |(린분석) 1. 우리는 모두 거짓말쟁이 & 2. 다양한 지표    |김성근|[발표자료](https://drive.google.com/file/d/0B_Ekt7icI0htWldfNjJSQkM4Mm8/view) |
 |   |    |(파이숍) Cartridge/Mezzanine 소개 및 설치 & 데모    |김무성|[발표자료](http://nbviewer.ipython.org/github/psygement/conpsy/blob/master/part2/shop/study01/Install_and_Intro_on_docker.ipynb) |
-| 2 |9/11 |(R) 8. Reducing Data Complexity (2)| 김성근 | |
-|   |    |(린분석) 3. 어떤 일을 할 것인가 & 4. 데이터 주도적 접근법과 데이터를 참고하는 접근법  |김성근| |
+| 2 |9/11 |(R) 8. Reducing Data Complexity (2)| 김성근 |[발표자료](https://github.com/psygement/conpsy/blob/master/part1/R-marketing/ch8/ch8.md) |
+|   |    |(린분석) 3. 어떤 일을 할 것인가 & 4. 데이터 주도적 접근법과 데이터를 참고하는 접근법  |김성근|[발표자료](https://drive.google.com/file/d/0B_Ekt7icI0htLUo3dVNZSW9rc1E/view) |
 |   |    |(리눅스) Linux Command Line Basics |김무성| |
 | 3 |9/18 |(소비자) (보강) 베이지안 통계기초 & PyMC 실습  |김무성| |
 | 4 |10/2|(소비자) 8. The Lexicon and Grammar of Affect as Information in Consumer Decision Making: The GAIM (2) |김무성| |
-|   |    |(R) 9. Additional Linear Modeling Topics (1)|김성근 | |
-|   |    |(린분석) 5. 다양한 분석 체계 & 6. 가장 중요한 한 가지 지표 |최혜진| 최혜진|
+|   |    |(R) 9. Additional Linear Modeling Topics (1)|김성근[발표자료](https://github.com/psygement/conpsy/blob/master/part1/R-marketing/ch9/ch9_1.md) |
+|   |    |(린분석) 5. 다양한 분석 체계 & 6. 가장 중요한 한 가지 지표 |최혜진|[발표자료](https://drive.google.com/file/d/0B_Ekt7icI0htdllRS3J6NWotbGM/view) |
 |   |    |(html) L1: HTML, CSS, and Boxes & L2: CSS Frameworks, Responsive Layouts (1)   |최혜진| |
-| 5 |10/9|(소비자) (놀러On) 아이트래커 특강| | |
-| 6 |10/16|(소비자) 11. Television Viewing and Social Reality: Effects and Underlying Processes || |
-|   |    |(R) 9. Additional Linear Modeling Topics (2)|김성근 | |
-|   |    |(린분석) 7. 어떤 사업을 하고 있는가 & 8. 사업 모델 1. 전자상거래 |최준혁| |
+| 5 |10/9|(소비자) (놀러On) 아이트래커 특강|최준혁 | |
+| 6 |10/16|(R) 9. Additional Linear Modeling Topics (2)|김성근 |[발표자료](https://github.com/psygement/conpsy/blob/master/part1/R-marketing/ch9/ch9_2.md) |
+|   |    |(린분석) 7. 어떤 사업을 하고 있는가 & 8. 사업 모델 1. 전자상거래 |최준혁|[발표자료](https://drive.google.com/file/d/0B_Ekt7icI0htYUkxblVEZHV0cms/view) |
 |   |    |(html) L1: HTML, CSS, and Boxes & L2: CSS Frameworks, Responsive Layouts (2)  |최혜진| |
 |   |    |(html) L3: Bootstrap and Other Frameworks    |박신홍| |
 | 7 |10/23|(R) 10. Confirmatory Factor Analysis and Structural Equation Modeling (1)|김무성 | |
-|   |    |(린분석) 9. 사업 모델 2 : SaaS & 10. 사업 모델 3: 무료 모바일 앱    |김성근| |
+|   |    |(린분석) 9. 사업 모델 2 : SaaS & 10. 사업 모델 3: 무료 모바일 앱    |김성근|발표자료](https://drive.google.com/drive/folders/0B_Ekt7icI0htWEF2azY3ZXNfRnM) |
 |   |    |(린분석) 13. 사업 모델 6 : 양면 마켓플레이스 & 14. 사업 단계 || |
 |   |    |(파이썬) 파이썬 기초 (1)  |송찬호| |
 | 8 |10/30|(R) 10. Confirmatory Factor Analysis and Structural Equation Modeling (2)|김무성 | |
-|   |    |(린분석) 11. 사업 모델 4 : 미디어 사이트 & 12. 사업 모델 5: 사용자 제작 콘텐츠    |김성근| |
+|   |    |(린분석) 11. 사업 모델 4 : 미디어 사이트 & 12. 사업 모델 5: 사용자 제작 콘텐츠    |김성근|[발표자료](https://drive.google.com/file/d/0B_Ekt7icI0htS3duaUlGTWY3NFE/view) |
 |   |    |(파이썬) 파이썬 기초 (2)  |송찬호| |
