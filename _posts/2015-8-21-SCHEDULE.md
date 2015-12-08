@@ -24,7 +24,7 @@ title: 스터디 일정 & 커리큘럼 & 발표자료
 |   |    |(디지털마케팅1) Digital Tools for Effectively Distributing Your Products |김혜원|[발표자료](https://drive.google.com/file/d/0B9nhk-tuzlXPMEtjQzNvMTdxYUE/view) |
 |   |    |(장고) 1. 웹 프로그래밍의 이해 & 2. 파이썬 웹 표준 라이브러리  |정광윤|[발표자료](http://bit.ly/1NHi2N7) |
 |13 |12/4|(R) 12. Association Rules for Market Basket Analysis|김성근 |[발표자료](https://github.com/psygement/conpsy/blob/master/part1/R-marketing/ch12/ch12.md) |
-|   |    |(R) 13. Choice Modeling |김무성 | |
+|   |    |(R) 13. Choice Modeling |김무성 |[발표자료](https://github.com/psygement/conpsy/blob/master/part2/R-marketing/ch13/13_Choice_Modeling.ipynb) |
 
 
 
@@ -35,9 +35,9 @@ title: 스터디 일정 & 커리큘럼 & 발표자료
 | 회차  | 일시   | 내용                                  | 발표자  |              발표자료                    |
 | ----- |:------:| :-------------------------------------|:-------:|:----------------------------------------: |
 | 1 |5/22|(소비자)1. History of Consumer Psychology |이종서|  [발표자료](https://drive.google.com/file/d/0B5JBHuPaVyd_bWRkZ3ZpYmZwNzA/view) |
-|   |    |(소비자)2. 2. The Role of Knowledge Accessibility in Cognition and Behavior (1)|김무성|[발표자료](http://nbviewer.ipython.org/github/psygement/conpsy/blob/master/part1/consumer/ch02/Ch02_The_Role_of_Knowledge_Accessibility_in_Cognition_and_Behavior.ipynb) |
-|   |    |(GA) 1. Digital Analytics Fundamentals    |문현호| [발표자료](https://drive.google.com/file/d/0B5PLVJct9613TUxxZjh1bDN1MGM/view) | 
-|   |    |보강 A) github, github에 웹페이지 만들기, GA 코드 심기    |김무성| 참고자료 |
+|   |    |(소비자)2. 2. The Role of Knowledge Accessibility in Cognition and Behavior (1)|김무성|[발표자료](http://nbviewer.ipython.org/github/psygement/conpsy/blob/master/part1/consumer/ch02/Ch02_The_Role_of_Knowledge_Accessibility_in_Cognition_and_Behavior.ipynb)|
+|   |    |(GA) 1. Digital Analytics Fundamentals |문현호| [발표자료](https://drive.google.com/file/d/0B5PLVJct9613TUxxZjh1bDN1MGM/view)| 
+|   |    |보강 A) github, github에 웹페이지 만들기, GA 코드 심기    |김무성|[발표자료](https://github.com/psygement/conpsy/blob/master/part1/ga/study01/Github_GithubPage_GA.ipynb)|
 | 2 |6/19|(소비자) 2. The Role of Knowledge Accessibility in Cognition and Behavior: Implications for Consumer Information Processing (2) |김무성|[발표자료](http://nbviewer.ipython.org/github/psygement/conpsy/blob/master/part1/consumer/ch02/Ch02_The_Role_of_Knowledge_Accessibility_in_Cognition_and_Behavior.ipynb) |
 |   |    |(소비자)3. Consumer Memory, Fluency, and Familiarity |김승욱|[발표자료](https://drive.google.com/file/d/0B-2yw-flkAy_T1M4S1FuSktvRGs/view)|
 |   |    |(GA) 2. Digital Analytics Fundamentals (1) |김성근|[발표자료](https://drive.google.com/file/d/0B_Ekt7icI0htTzZJSkljMEVaYTQ/view) |
@@ -78,7 +78,7 @@ title: 스터디 일정 & 커리큘럼 & 발표자료
 |   |    |(린분석) 3. 어떤 일을 할 것인가 & 4. 데이터 주도적 접근법과 데이터를 참고하는 접근법  |김성근|[발표자료](https://drive.google.com/file/d/0B_Ekt7icI0htLUo3dVNZSW9rc1E/view) |
 |   |    |(리눅스) Linux Command Line Basics |김무성| |
 | 3 |9/18 |(소비자) (보강) 베이지안 통계기초 & PyMC 실습  |김무성| |
-| 4 |10/2|(소비자) 8. The Lexicon and Grammar of Affect as Information in Consumer Decision Making: The GAIM (2) |김무성| |
+| 4 |10/2|(소비자) 8. The Lexicon and Grammar of Affect as Information in Consumer Decision Making: The GAIM (2) |김무성|[발표자료](https://github.com/psygement/conpsy/blob/master/part2/consumer/study01/08_The_Lexicon_and_Grammar_of_Affect_as_Information_in_Consumer_Decision_Making.ipynb)|
 |   |    |(R) 9. Additional Linear Modeling Topics (1)|김성근|[발표자료](https://github.com/psygement/conpsy/blob/master/part1/R-marketing/ch9/ch9_1.md) |
 |   |    |(린분석) 5. 다양한 분석 체계 & 6. 가장 중요한 한 가지 지표 |최혜진|[발표자료](https://drive.google.com/file/d/0B_Ekt7icI0htdllRS3J6NWotbGM/view) |
 |   |    |(html) L1: HTML, CSS, and Boxes & L2: CSS Frameworks, Responsive Layouts (1)   |최혜진| |
@@ -91,6 +91,6 @@ title: 스터디 일정 & 커리큘럼 & 발표자료
 |   |    |(린분석) 9. 사업 모델 2 : SaaS & 10. 사업 모델 3: 무료 모바일 앱    |김성근|[발표자료](https://drive.google.com/drive/folders/0B_Ekt7icI0htWEF2azY3ZXNfRnM) |
 |   |    |(린분석) 13. 사업 모델 6 : 양면 마켓플레이스 & 14. 사업 단계 |김성근|[발표자료](https://drive.google.com/file/d/0B_Ekt7icI0htSDhqX0RsZ28zaVU/view) |
 |   |    |(파이썬) 파이썬 기초 (1)  |송찬호| |
-| 8 |10/30|(R) 10. Confirmatory Factor Analysis and Structural Equation Modeling (2)|김무성 | |
+| 8 |10/30|(R) 10. Confirmatory Factor Analysis and Structural Equation Modeling (2)|김무성 |[발표자료](https://github.com/psygement/conpsy/blob/master/part2/R-marketing/ch10/10_Confirmatory_Factor_Analysis_and_Structural_Equation_Modeling.ipynb) |
 |   |    |(린분석) 11. 사업 모델 4 : 미디어 사이트 & 12. 사업 모델 5: 사용자 제작 콘텐츠    |김성근|[발표자료](https://drive.google.com/file/d/0B_Ekt7icI0htS3duaUlGTWY3NFE/view) |
 |   |    |(파이썬) 파이썬 기초 (2)  |송찬호| |
