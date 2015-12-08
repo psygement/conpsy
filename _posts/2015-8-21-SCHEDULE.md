@@ -81,13 +81,13 @@ title: 스터디 일정 & 커리큘럼 & 발표자료
 | 4 |10/2|(소비자) 8. The Lexicon and Grammar of Affect as Information in Consumer Decision Making: The GAIM (2) |김무성|[발표자료](https://github.com/psygement/conpsy/blob/master/part2/consumer/study01/08_The_Lexicon_and_Grammar_of_Affect_as_Information_in_Consumer_Decision_Making.ipynb)|
 |   |    |(R) 9. Additional Linear Modeling Topics (1)|김성근|[발표자료](https://github.com/psygement/conpsy/blob/master/part1/R-marketing/ch9/ch9_1.md) |
 |   |    |(린분석) 5. 다양한 분석 체계 & 6. 가장 중요한 한 가지 지표 |최혜진|[발표자료](https://drive.google.com/file/d/0B_Ekt7icI0htdllRS3J6NWotbGM/view) |
-|   |    |(html) L1: HTML, CSS, and Boxes & L2: CSS Frameworks, Responsive Layouts (1)   |최혜진| |
+|   |    |(html) L1: HTML, CSS, and Boxes & L2: CSS Frameworks, Responsive Layouts (1)|최혜진| |
 | 5 |10/9|(소비자) (놀러On) 아이트래커 특강|최준혁 | |
-| 6 |10/16|(R) 9. Additional Linear Modeling Topics (2)|김성근 |[발표자료](https://github.com/psygement/conpsy/blob/master/part1/R-marketing/ch9/ch9_2.md) |
+| 6 |10/16|(R) 9. Additional Linear Modeling Topics (2)|김성근 |[발표자료](https://github.com/psygement/conpsy/blob/master/part1/R-marketing/ch9/ch9_2.md)|
 |   |    |(린분석) 7. 어떤 사업을 하고 있는가 & 8. 사업 모델 1. 전자상거래 |최준혁|[발표자료](https://drive.google.com/file/d/0B_Ekt7icI0htYUkxblVEZHV0cms/view) |
 |   |    |(html) L1: HTML, CSS, and Boxes & L2: CSS Frameworks, Responsive Layouts (2)  |최혜진| |
 |   |    |(html) L3: Bootstrap and Other Frameworks    |박신홍| |
-| 7 |10/23|(R) 10. Confirmatory Factor Analysis and Structural Equation Modeling (1)|김무성 | |
+| 7 |10/23|(R) 10. Confirmatory Factor Analysis and Structural Equation Modeling (1)|김무성 |[발표자료](https://github.com/psygement/conpsy/blob/master/part2/R-marketing/ch10/10_Confirmatory_Factor_Analysis_and_Structural_Equation_Modeling.ipynb)|
 |   |    |(린분석) 9. 사업 모델 2 : SaaS & 10. 사업 모델 3: 무료 모바일 앱    |김성근|[발표자료](https://drive.google.com/drive/folders/0B_Ekt7icI0htWEF2azY3ZXNfRnM) |
 |   |    |(린분석) 13. 사업 모델 6 : 양면 마켓플레이스 & 14. 사업 단계 |김성근|[발표자료](https://drive.google.com/file/d/0B_Ekt7icI0htSDhqX0RsZ28zaVU/view) |
 |   |    |(파이썬) 파이썬 기초 (1)  |송찬호| |
