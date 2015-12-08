@@ -4,9 +4,10 @@ title: 스터디 일정 & 커리큘럼 & 발표자료
 ---
 
 진행 중 : PART III
-
 ## PART III
+
 * 2015년 11월 6일~ 2015년 12월 18일
+
 | 회차  | 일시   | 내용                                  | 발표자  |              발표자료                    |
 | ----- |:------:| :-------------------------------------|:-------:|:----------------------------------------: |
 | 9 |11/6 |(디지털마케팅1) Course Overview and Digital Tools for Developing Innovative New Products (1) |김성근 |[발표자료](https://drive.google.com/file/d/0B_Ekt7icI0htbUVsUnV4Y1pvUGM/view) |
