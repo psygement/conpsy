@@ -8,7 +8,7 @@ title: 스터디 일정 & 커리큘럼 & 발표자료
 ## PART III
 
 * 2015년 11월 6일~ 2015년 12월 18일
-
+  - 추천시스템은 코세라강좌로 진행합니다. 강의 자료는 다음 페이지를 참조해주세요([링크](https://www.coursera.org/learn/recommender-systems/)
 | 회차  | 일시   | 내용                                  | 발표자  |              발표자료                    |
 | ----- |:------:| :-------------------------------------|:-------:|:----------------------------------------: |
 | 9 |11/6 |(디지털마케팅1) Course Overview and Digital Tools for Developing Innovative New Products (1) |김성근 |[발표자료](https://drive.google.com/file/d/0B_Ekt7icI0htbUVsUnV4Y1pvUGM/view) |
