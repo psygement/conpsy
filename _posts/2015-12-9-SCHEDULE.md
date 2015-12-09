@@ -11,19 +11,19 @@ title: 스터디 일정 & 커리큘럼 & 발표자료
 
 | 회차  | 일시   | 내용                                  | 발표자  |              발표자료                    |
 | ----- |:------:| :-------------------------------------|:-------:|:----------------------------------------: |
-| 9 |11/6 |(디지털마케팅1) Course Overview and Digital Tools for Developing Innovative New Products (1) |김성근 |[발표자료](https://drive.google.com/file/d/0B_Ekt7icI0htbUVsUnV4Y1pvUGM/view) |
+| 1 |11/6 |(디지털마케팅1) Course Overview and Digital Tools for Developing Innovative New Products (1) |김성근 |[발표자료](https://drive.google.com/file/d/0B_Ekt7icI0htbUVsUnV4Y1pvUGM/view) |
 |   |    |(린분석) 13. 사업 모델 6 : 양면 마켓플레이스 & 14. 사업 단계 |김성근|[발표자료](https://drive.google.com/file/d/0B_Ekt7icI0htSDhqX0RsZ28zaVU/view)|
 |   |    |(추천시스템) Introduction to Recommender Systems |김무성| |
 |   |    |(파이썬) 파이썬 기초 (3)  |송찬호| |
-|10 |11/13|(디지털마케팅1) Course Overview and Digital Tools for Developing Innovative New Products (2) |김성근 | [발표자료](https://drive.google.com/file/d/0B_Ekt7icI0htbUVsUnV4Y1pvUGM/view)|
+|2 |11/13|(디지털마케팅1) Course Overview and Digital Tools for Developing Innovative New Products (2) |김성근 | [발표자료](https://drive.google.com/file/d/0B_Ekt7icI0htbUVsUnV4Y1pvUGM/view)|
 |   |    |(R) 11. Segmentation: Clustering and Classification |박상진 | |
 |   |    |(추천시스템) Introduction to Non-Personalized Recommenders (1) |박상진| |
 |   |    |(Ajax) Intro to AJAX  |박신홍|[발표자료](https://drive.google.com/file/d/0B4plsZbXCygJTmU0cVBUTUdud1U/view)|
-|11 |11/20|(디지털마케팅1) Digital Tools for Persuading Customers to Buy Your Products |김성근 |[발표자료](https://drive.google.com/file/d/0B_Ekt7icI0htY0JkQ0lMU29UVEk/view) |
+|3 |11/20|(디지털마케팅1) Digital Tools for Persuading Customers to Buy Your Products |김성근 |[발표자료](https://drive.google.com/file/d/0B_Ekt7icI0htY0JkQ0lMU29UVEk/view) |
 |   |    |(추천시스템) Introduction to Non-Personalized Recommenders (2) |박상진| |
 |   |    |(디지털마케팅1) Digital Tools for Effectively Distributing Your Products |김혜원|[발표자료](https://drive.google.com/file/d/0B9nhk-tuzlXPMEtjQzNvMTdxYUE/view) |
 |   |    |(장고) 1. 웹 프로그래밍의 이해 & 2. 파이썬 웹 표준 라이브러리  |정광윤|[발표자료](http://bit.ly/1NHi2N7) |
-|13 |12/4|(R) 12. Association Rules for Market Basket Analysis|김성근 |[발표자료](https://github.com/psygement/conpsy/blob/master/part1/R-marketing/ch12/ch12.md) |
+|4 |12/4|(R) 12. Association Rules for Market Basket Analysis|김성근 |[발표자료](https://github.com/psygement/conpsy/blob/master/part1/R-marketing/ch12/ch12.md) |
 |   |    |(R) 13. Choice Modeling |김무성 |[발표자료](https://github.com/psygement/conpsy/blob/master/part2/R-marketing/ch13/13_Choice_Modeling.ipynb) |
 
 
